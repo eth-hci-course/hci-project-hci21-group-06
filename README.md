@@ -14,7 +14,12 @@
 
 ## Ideation
 
-    TODO
+    -How might we win people out of different demographics and with political options?
+  -How might we incentivise people to use the app and keep using it? (How do we get them to care?)
+  -How might we display the user’s energy use in a way they can understand?
+  -How might we evaluate the impact/success of the app?
+  -How might we integrate the app with other technologies/devices?
+
     
 ## Evaluation
 
