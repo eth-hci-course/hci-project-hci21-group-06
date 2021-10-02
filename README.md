@@ -4,7 +4,7 @@
 </p>
 
 # Electricity Use, Group 06
-#### Lothaire Aubergeon, Ian Hutter, Sophie Leichtle, Marco Schöb, Ahmed Reda Seghrouchni, Markus Wagner
+#### Lothaire Aubergeon, Ian Hutter, Sophie Leichtle, Marco Schöb, Markus Wagner
 
 ## Project description
 
