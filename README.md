@@ -26,7 +26,7 @@ TODO: summary of sources
 ### Brainstorming
 ![Image of affinity diagram](https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/DeskResearch/brainstorming_30th.png)
 We took the brainstorming approach B where each of us first tried to find as many ideas as possible in 10 minutes. Afterwardsc we discussed the ideas and grouped them into
-four categoriesc and connected some of the ideas with relevance to each other. This was done in person using Milo.
+four categoriesc and connected some of the ideas with relevance to each other. This was done in person using Miro.
 ## Evaluation
 
     TODO
