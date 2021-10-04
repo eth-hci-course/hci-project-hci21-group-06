@@ -8,9 +8,8 @@
 
 ## Project description
 
-    TODO
-
-  Introduction to chosen topic in own words, possibly with a brief motivation
+The goal of the project, which we have selected, wants to provide a solution to overcome the problem of electricity overuse in our world. We want to develop an application, which makes households more aware of their energy consumption and encourages them to consume less. 
+What motivates us the most is that this is a pressing problem in the need for a solution in order to minimize climate change.
 
 ## Ideation
 ### Summary of sources
@@ -24,6 +23,7 @@ The second approach that we found makes use of additional hardware sensors, whic
 The third solution is the EDF & MOI smartphone app by the French electricity provider EDF. It shows the user his or her energy consumption in customizable time intervals in Euros or kWh as the user’s will. One can set a yearly goal which the user wants to reach and can receive the yearly bill divided into appliance categories.
 
 The first image shows some screenshots from the hardware-based smartphone application and the second one the EDF & MOI app.
+![image](https://user-images.githubusercontent.com/48530434/135847078-db45b079-d960-4788-985b-3fd5daaf589b.png)
 
 ![image](https://user-images.githubusercontent.com/48530434/135846768-c0a411cb-b165-4da5-b21b-d63d60d9256f.png)
 
