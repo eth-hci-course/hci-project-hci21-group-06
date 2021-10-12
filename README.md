@@ -38,13 +38,13 @@ The first image shows some screenshots from the hardware-based smartphone applic
 
 ### Brainstorming
 ![Image of affinity diagram](https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/DeskResearch/brainstorming_30th.png)
-We took the brainstorming approach B where each of us first tried to find as many ideas as possible in 10 minutes. Afterwardsc we discussed the ideas and grouped them into
-four categoriesc and connected some of the ideas with relevance to each other. This was done in person using Miro.
+We took the brainstorming approach B where each of us first tried to find as many ideas as possible in 10 minutes. Afterwards we discussed the ideas and grouped them into
+four categories and connected some of the ideas with relevance to each other. This was done in person using Miro.
 
 ## Low-fidelity Prototype
 ### Idea A (gamification prototype)
 
-TODO
+Our process for this prototype was that we first took many of the ideas from the brainstorming that included gamification and grouped them together. We then picked out some of them that seemed like a good fit and rounded out the prototype through discussing it. This idea was then drawn on paper into a paper prototype which meant that we had to start thinking about the visual design of it. This whole process resulted in a horizontal prototype that encompasses many of the aspects that a possible final app would have.
 
 ### Idea B
 
