@@ -40,14 +40,20 @@ The first image shows some screenshots from the hardware-based smartphone applic
 ![Image of affinity diagram](https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/DeskResearch/brainstorming_30th.png)
 We took the brainstorming approach B where each of us first tried to find as many ideas as possible in 10 minutes. Afterwardsc we discussed the ideas and grouped them into
 four categoriesc and connected some of the ideas with relevance to each other. This was done in person using Miro.
-## Evaluation
-
-    TODO
 
 ## Low-fidelity Prototype
+### Idea A (gamification prototype)
 
-    TODO
+TODO
+
+### Idea B
+
+TODO
+
+### Idea C
     
+TODO
+
 ## Mid-fidelity Prototype
 
     TODO
