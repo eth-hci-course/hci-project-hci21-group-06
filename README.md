@@ -46,6 +46,10 @@ four categories and connected some of the ideas with relevance to each other. Th
 
 Our process for this prototype was that we first took many of the ideas from the brainstorming that included gamification and grouped them together. We then picked out some of them that seemed like a good fit and rounded out the prototype through discussing it. This idea was then drawn on paper into a paper prototype which meant that we had to start thinking about the visual design of it. This whole process resulted in a horizontal prototype that encompasses many of the aspects that a possible final app would have.
 
+The ranking screen is central to the app, allowing you to compare yourself with others:
+![Image of ranking screen](https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/LowFiPrototyping/IdeaA/Paper/03_ranking.jpg)
+
+
 ### Idea B
 
 TODO
