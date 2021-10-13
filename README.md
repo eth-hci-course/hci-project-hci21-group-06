@@ -54,9 +54,14 @@ The ranking screen is central to the app, allowing you to compare yourself with 
 
 TODO
 
-### Idea C
+### Idea C (simple prototype)
+![image of storyboard simple prototype](Deliverables/LowFiPrototyping/IdeaC/SimplePrototype.png)
     
-TODO
+The basic idea behind the simple prototype is, that it just gives you the information. Consequently the start/main menu has just four panels that display the possible electricity savings in the top one, the current use on the middle-left panel, the impact of this use in the middle- right one and your use statistics on the bottom one.
+
+![image of main menu](Deliverables/LowFiPrototyping/IdeaC/Paper/Main.jpg)
+
+Either by pressing one of the panels or on of the symbols in the taskbar on the bottom you get to the main menu current use, impact, statistics or tips page were you can see your different stats and edit the ones that are displayed in the main menu. The last symbol in the taskbar brings you to the settings page.
 
 ## Mid-fidelity Prototype
 
