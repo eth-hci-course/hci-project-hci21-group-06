@@ -42,6 +42,10 @@ We took the brainstorming approach B where each of us first tried to find as man
 four categories and connected some of the ideas with relevance to each other. This was done in person using Miro.
 
 ## Low-fidelity Prototype
+<img width="1147" alt="Screenshot 2021-10-14 at 12 37 24" src="https://user-images.githubusercontent.com/43212194/137301949-f0a84e1d-5e0a-4062-8a92-34676c0434df.png">
+We started on Miro, grouping ideas we had into each our own ideas for a specific prototype. We then merged some that were similar and ended up with our three ideas: eco, gameification and simplicity/customizability. From there we created our storyboards, trying to figure out what kind of situations our prototypes would be fit for. After that, we started work on the protoype, starting from what kind of features and interactions we wanted and moving on to how to display them.
+
+
 ### Idea A (gamification prototype)
 ![image of storyboard gamification prototype](https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/LowFiPrototyping/IdeaA/GamificationPrototype.png)
 
