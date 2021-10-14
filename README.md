@@ -51,18 +51,18 @@ The ranking screen is central to the app, allowing you to compare yourself with 
 ![Image of ranking screen](https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/LowFiPrototyping/IdeaA/Paper/03_ranking.jpg)
 
 
-### Idea B
+### Idea B (ecologic prototype)
+![image of storyboard ecologic prototype](Deliverables/LowFiPrototyping/IdeaB/EcoPrototype.png)
 
-TODO
-
-### Idea C (simple prototype)
-![image of storyboard simple prototype](Deliverables/LowFiPrototyping/IdeaC/SimplePrototype.png)
-    
-The basic idea behind the simple prototype is, that it just gives you the information. Consequently the start/main menu has just four panels that display the possible electricity savings in the top one, the current use on the middle-left panel, the impact of this use in the middle- right one and your use statistics on the bottom one.
+The basic idea behind the ecologic prototype is that it shows you the impact of your electricity consumption but more importantly what you can do about it. Consequently the start/main menu has four panels that display the possible electricity savings in the top one, the current use on the middle-left panel, the impact of this use in the middle- right one and your use statistics on the bottom one.
 
 ![image of main menu](Deliverables/LowFiPrototyping/IdeaC/Paper/Main.jpg)
 
 Either by pressing one of the panels or on of the symbols in the taskbar on the bottom you get to the main menu current use, impact, statistics or tips page were you can see your different stats and edit the ones that are displayed in the main menu. The last symbol in the taskbar brings you to the settings page.
+
+### Idea C (simple prototype)
+![image of storyboard simple prototype](Deliverables/LowFiPrototyping/IdeaC/SimplePrototype.png)
+    
 
 ## Mid-fidelity Prototype
 
