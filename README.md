@@ -63,6 +63,7 @@ Either by pressing one of the panels or on of the symbols in the taskbar on the 
 ### Idea C (simple prototype)
 ![image of storyboard simple prototype](Deliverables/LowFiPrototyping/IdeaC/SimplePrototype.png)
     
+The idea of this prototype is that the app solely displays data in a way that is simple and customizable, thus motivating the User to utilize it solely through ease of use. It allows the user to display data in a way they personally can understand and makes it easy to change up how things are displayed.
 
 ## Mid-fidelity Prototype
 
