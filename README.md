@@ -74,7 +74,8 @@ The idea of this prototype is that the app solely displays data in a way that is
 
 ## Mid-fidelity Prototype
 
-    TODO
+### Idea A
+![image](Deliverables/MidFiPrototyping/IdeaA/image1.jpeg)
 
 ## Hi-fidelity Prototype
 
