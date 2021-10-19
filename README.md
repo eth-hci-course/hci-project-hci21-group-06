@@ -77,6 +77,18 @@ The idea of this prototype is that the app solely displays data in a way that is
 ### Idea A
 ![image](Deliverables/MidFiPrototyping/IdeaA/image1.jpeg)
 
+
+### Idea B (Gamification Prototype)
+This prototype is for a mobile app consisting of four main screens (and a login screen that is shown when you install the app for the first time). The bottom navigation allows the user to easily switch between the four screens.
+
+First up is the dashboard, which shows the user how many coins they have earned that day and two shortcut buttons to quickly jump to a certain ranking.
+
+Next is the ranking screen, where the user can check how well they are doing in different rankings. The prototype allows switching between two different groups and two different timeframes through dropdown menus at the top.
+
+The third screen is the shop, where a user is able to buy certain enhancements or items. At the bottom the user is able to see how many coins they have earned and how many are still left to spend.
+
+The last screen is the profile page, where the user profile and important settings can be changed. From here you can also delete your account which leads you back to the login screen.
+
 ## Hi-fidelity Prototype
 
     TODO
