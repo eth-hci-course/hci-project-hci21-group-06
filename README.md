@@ -79,6 +79,7 @@ The idea of this prototype is that the app solely displays data in a way that is
 
 
 ### Idea B (Gamification Prototype)
+![image](Deliverables/MidFiPrototyping/IdeaB/GameificationPrototype_overview.png)
 This prototype is for a mobile app consisting of four main screens (and a login screen that is shown when you install the app for the first time). The bottom navigation allows the user to easily switch between the four screens.
 
 First up is the dashboard, which shows the user how many coins they have earned that day and two shortcut buttons to quickly jump to a certain ranking.
