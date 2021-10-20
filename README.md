@@ -74,8 +74,20 @@ The idea of this prototype is that the app solely displays data in a way that is
 
 ## Mid-fidelity Prototype
 
-### Idea A
+### Idea A (Simple Prototype)
 ![image](Deliverables/MidFiPrototyping/IdeaA/image1.jpeg)
+
+This prototype for a mobile app consists of five panel. It starts on the Home Panel, where the App displays the current electricity use in Watts and in Dollars per hour.
+
+To see a more detailed version of the user's electricity consumption, he can go over to the Current Usage Panel which displays the absolute and the relative power consumption of his devices. Using the Dropdown menu bellow the Bubble diagram, the unit of the power usage can be changed.
+
+In case of the Stand-by devices, it is also possible to go even more into detail by clicking on the corresponding bubble. By clicking on the letters above the diagram, she can select the considered timeframe.
+
+By pressing on the Lightning bolt, the user can choose the type of diagram he wants his electricity consumption displayed as. Here he has the choice between a line and column diagram. Like on the Current Usage panel, the considered timeframe and the unit of the power usage can be adjusted.
+
+For tips on how to curb our electricity consumption she can take a look on our Reduction Tips Panel, which presents her a selection of specific and unspecific measures how to use less energy.
+
+Finally, on the Settings panel, the user can see his Account and the Option to delete it, the currency that should be used and the option to display the cost for each bubble. Additionally, there are also the options to activate the welcome message on the Front Panel and the notifications.
 
 
 ### Idea B (Gamification Prototype)
