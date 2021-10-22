@@ -102,6 +102,20 @@ The third screen is the shop, where a user is able to buy certain enhancements o
 
 The last screen is the profile page, where the user profile and important settings can be changed. From here you can also delete your account which leads you back to the login screen.
 
+
+### Peer feedback
+#### Our testers
+Lothaire Aubergeon : TODO
+
+Markus Wagner : TODO
+
+Sophie Leichtle: TODO
+
+
+#### Summary of feedback
+TODO
+
+
 ## Hi-fidelity Prototype
 
     TODO
