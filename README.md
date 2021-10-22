@@ -113,8 +113,12 @@ Sophie Leichtle: TODO
 
 
 #### Summary of feedback
-TODO
+TODO Feedback IdeaA
 
+The peer feedback we received for our IdeaB (gamification prototype) was generally really positive. The main point that the testers liked was that our app is simple to understand because of its clear structure and the core idea is executed well.  More specifically the testers mentioned that the flat four screen structure is easy to learn for new users. There are no nested or complicated screens, everything is part of four clearly distinct screens that you can switch between at anytime with the bottom bar. For example testers mentioned that “the learning curve is really flat” and “quickly being able to jump between all screens is great”. Our testers also all liked the overall idea with some calling it really creative and very interesting. 
+But of course, there was also some criticism and ideas for improvements. The main criticisms were that the settings ‘show contacts’ and ‘incognito mode’ sound very similar and the difference between them is not really clear. Secondly, the dashboard showing energy usage and coins can be confusing as more electricity usage means less coins. This inverse relation is not immediately obvious. Additionally, there is no info for the user on how they can improve their energy usage. Some other ideas for improvement include adding achievements or real-world incentives/prices, aggregating notifications based on user preference, daily challenges, tips on how to improve power consumption, redesigning the shop, thinking about how to handle households and showing historic data.
+
+Moving forward, based on the feedback and our prototypes, we want to pursue a fusion of our current two prototypes. The gamification prototype is a promising start, but still lacks features in some parts. This is where we can use parts from our IdeaA. Integrating the visualizations from IdeaA that show the user their electricity usage and the tips on how to improve into the gamification prototype addresses many of the feedback ideas from our peers. 
 
 ## Hi-fidelity Prototype
 
