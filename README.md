@@ -121,8 +121,19 @@ But of course, there was also some criticism and ideas for improvements. The mai
 Moving forward, based on the feedback and our prototypes, we want to pursue a fusion of our current two prototypes. The gamification prototype is a promising start, but still lacks features in some parts. This is where we can use parts from our IdeaA. Integrating the visualizations from IdeaA that show the user their electricity usage and the tips on how to improve into the gamification prototype addresses many of the feedback ideas from our peers. 
 
 ## Hi-fidelity Prototype
+The plan for our hi-fi prototype is a fusion of our two mid-fi protypes. We take the general structure of IdeaB that users liked in the feedback and expand it with features of IdeaA that testers were missing from IdeaB. The general idea is adding a fifth screen to IdeaB where you can see the electricity you are using (user feedback told us that they want a way to know how they are using electricity). We also plan on adding the tips from IdeaA as challenges onto the bottom half of the dashboard screen (user feedback told us that previously that section was confusing and not useful and that they want the app to provide ideas for reducing electricity usage). Lastly, we plan on adding tappable profiles for the users.
 
-    TODO
+The core aspects for our hi-fi prototype are the following five screens:
+- Dashboard screen: shows how many coins you earned today, shows daily challenges to help you improve electricity usage
+- Ranking screen: shows how you rank compared to different groups of users on different timeframes (tapping on users shows you their profile) 
+- Usage screen: shows intuitive and helpful visualizations of your electricity usage
+- Shop screen: buy virtual (and maybe physical) items that enhance your app or how you appear on the rankings of others
+- Profile screen: allows you to customize your profile and change some settings 
+
+Ideas for the A/B test
+- Put profile screen in top right instead of bottom navigation.
+- ...
+
     
 ## User study
 
