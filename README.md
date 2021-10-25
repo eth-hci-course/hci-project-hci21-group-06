@@ -105,7 +105,7 @@ The last screen is the profile page, where the user profile and important settin
 
 ### Peer feedback
 #### Our testers
-Lothaire Aubergeon : TODO
+Lothaire Aubergeon : 09
 
 Markus Wagner : TODO
 
