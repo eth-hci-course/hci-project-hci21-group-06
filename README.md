@@ -107,9 +107,9 @@ The last screen is the profile page, where the user profile and important settin
 #### Our testers
 Lothaire Aubergeon : 09
 
-Markus Wagner : TODO
+Markus Wagner : 12
 
-Sophie Leichtle: TODO
+Sophie Leichtle: 15
 
 
 #### Summary of feedback
@@ -136,6 +136,7 @@ The core aspects for our hi-fi prototype are the following five screens:
 
 Ideas for the A/B test
 - Put profile screen in top right instead of bottom navigation.
+- Try two different electricity usage vizualisations: graph or histogram
 - ...
 
     
