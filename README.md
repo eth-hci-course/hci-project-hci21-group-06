@@ -135,9 +135,21 @@ The core aspects for our hi-fi prototype are the following five screens:
 - Profile screen: allows you to customize your profile and change some settings 
 
 Ideas for the A/B test
-- Put profile screen in top right instead of bottom navigation.
-- Try two different electricity usage vizualisations: graph or histogram
-- ...
+- General
+  - Put profile screen in upper right-hand corner separate from settings
+  - Put settings in upper right-hand corner seperate from profile
+  - Put Profile and settings together in upper right hand corner
+  - When opening the app, start on the dashboard vs the rankings 
+- Dashboard
+  - Coin visualization: Have a sandwatch splitted into two parts or a the power counting up and the coins counting down for visualizing that more energy use results in fewer coins
+  - Swipe accepted challenges away vs clicking on them to activate them
+  - Adding rewards or pop-up notifications to challenges
+- Ranking screen
+  - For the global leaderboard show entire leaderboard vs just the section around your own score
+- Usage screen
+  - Try two different electricity usage vizualisations: graph or histogram
+  - Bar chart vs line chart
+  - Group the energy use in the stats by use-categories (entertainment, cooking etc.) or by appliances for better overview
 
     
 ## User study
