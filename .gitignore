@@ -2,3 +2,6 @@ code/hi_fi_prototype/node_modules
 code/hi_fi_prototype/.DS_Store
 code/hi_fi_prototype/dist
 code/hi_fi_prototype/public
+.idea/hci-project-hci21-group-06.iml
+.idea/modules.xml
+.idea/vcs.xml
