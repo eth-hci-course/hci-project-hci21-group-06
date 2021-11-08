@@ -1,26 +1,36 @@
 <template>
 <div class="page">
-      <div class="content">
-        <router-view/>
-      </div>
+      <md-content>
+      <transition :name="transitionName">
+        <router-view class="routerView"/>
+      </transition>
+      </md-content>
       <div class="bottom-navigator">
         <md-bottom-bar md-type="shift" md-sync-route>
           <md-bottom-bar-item id="bottom-bar-item-Dashboard" md-label="Dashboard" md-icon="dashboard" to='/dashboard'></md-bottom-bar-item>
           <md-bottom-bar-item id="bottom-bar-item-Rankings" md-label="Rankings" md-icon="leaderboard" to='/rankings'></md-bottom-bar-item>
-          <md-bottom-bar-item id="bottom-bar-item-shop" md-label="Shop" md-icon="local_mall" to='/shop'></md-bottom-bar-item>
+          <md-bottom-bar-item id="bottom-bar-item-shop" md-label="Shop" md-icon="local_mall" to="shop"></md-bottom-bar-item>
           <md-bottom-bar-item id="bottom-bar-item-stats" md-label="Analytics" md-icon="analytics" to='/analytics'></md-bottom-bar-item>
           <md-bottom-bar-item id="bottom-bar-item-settings" md-label="Settings" md-icon="settings" to='/settings'></md-bottom-bar-item>
         </md-bottom-bar>  
       </div>   
 </div>
 </template>
-
+ 
 <script>
+import { mapState } from 'vuex'
+import {getPageNumber} from './utils.js'
+
 export default {
   name: 'App',
-  components: {
-    
-  }
+  data: function () {
+    return {transitionName: 'slide-right'}
+  }, 
+  watch: {
+    '$route' (to, from) {
+      this.transitionName = (getPageNumber(to.path) < getPageNumber(from.path)) ? 'slide-right' : 'slide-left'
+    },
+  },
 }
 </script>
 
@@ -29,14 +39,38 @@ export default {
     display:flex;
     flex-flow: column;
     height: 100vh;
+    overflow-x:hidden;
   }
-  .content{
-    background:gold;
+  .routerView {
     height: 756px;
+    overflow:auto;
   }
   .bottom-navigator{
     bottom: 0;
     position: absolute;
     width: 100%;
   }
+</style>
+
+<style lang="scss">
+  @import "~vue-material/dist/theme/engine"; // Import the theme engine
+
+  @include md-register-theme("DefaultDark", (
+    primary: #005ecb, // The primary color of your application
+    accent: #b0003a, // The accent or secondary color
+    theme: dark,
+  ));
+
+  @include md-register-theme("DefaultLight", (
+    primary: #83b9ff, // The primary color of your application
+    accent: #ff6090, // The accent or secondary color
+    theme: light,
+  ));
+
+  @include md-register-theme("test", (
+    primary: #83b9ff, // The primary color of your application
+    accent: #ff6090, // The accent or secondary color
+  ));
+
+  @import "~vue-material/dist/theme/all"; 
 </style>
