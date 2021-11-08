@@ -1,7 +1,9 @@
 <template>
 <div class="page">
       <md-content>
+      <transition :name="transitionName">
         <router-view class="routerView"/>
+      </transition>
       </md-content>
       <div class="bottom-navigator">
         <md-bottom-bar md-type="shift" md-sync-route>
@@ -17,15 +19,21 @@
 
 <script>
 import { mapState } from 'vuex'
+import {getPageNumber} from './utils.js'
 
 export default {
   name: 'App',
-  components: {
-    
-  },
+  data: function () {
+    return {transitionName: 'slide-right'}
+  }, 
   computed: mapState({
-        shopRoute: state => (state.ABTests.ABToggle) ? '/shop' : '/shop/store'
+        shopRoute: state => (state.ABTests.ABToggle) ? '/shopB' : '/shopA'
     }),
+  watch: {
+    '$route' (to, from) {
+      this.transitionName = (getPageNumber(to.path) < getPageNumber(from.path)) ? 'slide-right' : 'slide-left'
+    },
+  },
 }
 </script>
 
@@ -34,6 +42,7 @@ export default {
     display:flex;
     flex-flow: column;
     height: 100vh;
+    overflow-x:hidden;
   }
   .routerView {
     height: 756px;
@@ -59,6 +68,11 @@ export default {
     primary: #83b9ff, // The primary color of your application
     accent: #ff6090, // The accent or secondary color
     theme: light,
+  ));
+
+  @include md-register-theme("test", (
+    primary: #83b9ff, // The primary color of your application
+    accent: #ff6090, // The accent or secondary color
   ));
 
   @import "~vue-material/dist/theme/all"; 

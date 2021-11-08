@@ -1,10 +1,15 @@
-<template>
+<template key="purePurchases">
 <div class="themeList">
     <div v-for="theme in purchasedThemes">
         <md-card class="themeCard" :md-theme="theme.id">
             <md-card-header>
                 <div class="md-title">{{theme.name}} </div>
             </md-card-header>
+            <md-card-content>
+                <md-avatar class="md-primary"/>
+                <md-avatar class="md-accent"/>
+
+            </md-card-content>
             <md-card-actions>
                 <md-button class="md-raised md-primary" v-on:click="setTheme(theme.id)" >Equip</md-button>
             </md-card-actions>

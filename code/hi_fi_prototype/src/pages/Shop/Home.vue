@@ -9,10 +9,12 @@
 
   <div class="A" v-if="ABToggle==false">
     <md-tabs md-alignment="fixed" md-active-tab="tab-Store" md-sync-route>
-        <md-tab id="tab-Store" md-label="Store" to="/shop/store"/>
-        <md-tab id="tab-Purchases" md-label="Purchases" to="/shop/purchases"/>
+        <md-tab id="tab-Store" md-label="Store" to="/shopA/store"/>
+        <md-tab id="tab-Purchases" md-label="Purchases" to="/shopA/purchases"/>
     </md-tabs>
-    <router-view class="shop-router"/>
+    <transition :name="transitionName">
+      <router-view class="shop-router"> </router-view>
+    </transition>
   </div>
   <MixedShop v-if="ABToggle==true"/>
 </div>
@@ -25,6 +27,9 @@ import MixedShop from './components/MixedShop'
 import { mapState } from 'vuex'
 
 export default {
+  data: function () {
+    return {transitionName: 'slide-right'}
+  }, 
   components: {
     PurePurchases,
     PureShop,
@@ -33,10 +38,16 @@ export default {
   computed: mapState({
         ABToggle: state => state.ABTests.ABToggle
     }),
+  watch: {
+  '$route' (to, from) {
+    this.transitionName = to.path == '/shopA/purchases' ? 'slide-right' : 'slide-left'
+  }
+}
 }
 </script>
 
 <style scoped>
+@import '../../router/transitions.css';
 .card {
     width: 80%;
     margin-left: auto;
@@ -56,6 +67,7 @@ export default {
 .A {
   display:flex;
   flex-direction: column;
-  overflow:auto;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
 </style>
