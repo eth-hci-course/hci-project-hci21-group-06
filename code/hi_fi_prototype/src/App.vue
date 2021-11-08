@@ -52,26 +52,3 @@ export default {
     width: 100%;
   }
 </style>
-
-<style lang="scss">
-  @import "~vue-material/dist/theme/engine"; // Import the theme engine
-
-  @include md-register-theme("DefaultDark", (
-    primary: #005ecb, // The primary color of your application
-    accent: #b0003a, // The accent or secondary color
-    theme: dark,
-  ));
-
-  @include md-register-theme("DefaultLight", (
-    primary: #83b9ff, // The primary color of your application
-    accent: #ff6090, // The accent or secondary color
-    theme: light,
-  ));
-
-  @include md-register-theme("test", (
-    primary: #83b9ff, // The primary color of your application
-    accent: #ff6090, // The accent or secondary color
-  ));
-
-  @import "~vue-material/dist/theme/all"; 
-</style>
