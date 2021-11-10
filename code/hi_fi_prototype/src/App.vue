@@ -86,5 +86,17 @@ export default {
     theme: dark,
   ));
 
+  @include md-register-theme("GreenYellowLight", (
+    primary: #1de9b6, 
+    accent: #ffea00, 
+    theme: light,
+  ));
+
+  @include md-register-theme("GreenYellowDark", (
+    primary: #1de9b6, 
+    accent: #ffea00, 
+    theme: dark,
+  ));
+
   @import "~vue-material/dist/theme/all"; 
 </style>

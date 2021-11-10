@@ -9,7 +9,7 @@
       <router-view class="shop-router"> </router-view>
     </transition>
   </div>
-  <MixedShop v-if="ABToggle==true"/>
+  <MixedShop class="B" v-if="ABToggle==true"/>
 </div>
 </template>
 
@@ -57,7 +57,7 @@ export default {
   flex-direction: column;
   overflow:auto;
 }
-.A {
+.A, .B {
   display:flex;
   flex-direction: column;
   overflow-y:auto;
