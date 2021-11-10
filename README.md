@@ -153,5 +153,31 @@ Ideas for the A/B test
 
     
 ## User study
+### Goal of the User Study
+In our user study we want to compare two different versions of our app that have numerous changes. The rough structure of the app remains the same for both versions, but we will vary the content on many of the screens quite a bit. This investigation is inspired by our mid-fi prototypes as we used some fancy designs (eg. bubbles to represent usage) but we are not sure if those designs are actually efficient to use.
+Our A/B variants will help us decide on which way of structuring the content of the app acutally performs better. To do this, our A variant encompasses somewhat chaotic but fancy designs, using cards and bubbles, whereas our B variant is more structured, using lists and dropdowns. 
 
-    TODO
+### Differences between A and B
+TODO table
+
+### Hypotheses
+There will be no effect of the way content is structured on Task completion time
+There will be no effect of the way content is structured on clicks needed
+There will be no effect of the way content is structured on user satisfaction
+
+### Data collection
+We will use a timer that runs in the background which times the user throughout the whole study. We measure the time it takes for the user to complete all tasks. We also measure the amount of clicks and how many unneeded clicks users perform
+We will also do a survey afterwards to get the users opinion on how well they liked the experience
+
+### Experiment procedure
+#### Task
+locate the challenges section on the dashboard, locate and accept the dishwasher challenge, locate and dismiss the phone challenge
+move on to the rankings, find your place on the monthly family ranking, then find your place on the annual country ranking
+move on to the usage, find the electricity usage of your fridge over the last 24h, then find the electricity usage of your pc over the last 7 days
+move on to the shop, find and equit theme X, then buy and equip theme Y
+
+#### Apparatus
+We use the app running on a laptop in the webbrowser. As it is a phone app, we use the Iphone X preset from the devtools of any common browser. The participant is seated at the table.
+
+#### Preliminary protocol
+TODO: link to protocol
