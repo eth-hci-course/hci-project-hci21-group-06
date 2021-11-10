@@ -16,7 +16,7 @@
       </div>   
 </div>
 </template>
-
+ 
 <script>
 import { mapState } from 'vuex'
 import {getPageNumber} from './utils.js'
@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  @import './router/transitions.css';
   .page{
     display:flex;
     flex-flow: column;

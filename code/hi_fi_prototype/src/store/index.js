@@ -13,4 +13,4 @@ export default new Vuex.Store({
     ABTests,
     currency
   },
-})
+}) 
