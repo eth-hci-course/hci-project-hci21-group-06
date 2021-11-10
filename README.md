@@ -158,7 +158,13 @@ In our user study we want to compare two different versions of our app that have
 Our A/B variants will help us decide on which way of structuring the content of the app acutally performs better. To do this, our A variant encompasses somewhat chaotic but fancy designs, using cards and bubbles, whereas our B variant is more structured, using lists and dropdowns. 
 
 ### Differences between A and B
-TODO table
+Screen | A (the 'fancy' prototype) | B (the 'structured' prototype)
+--- | --- | ---
+Dashboard | Cards of different shapes and sizes and colors for each challenge | One single long list with all challenges
+Rankings | Arrows to switch between different rankings | Dropdown menus to switch between different rankings
+Usage | Bubbles of different sizes show different usages of electricity  | One single list of all usages
+Shop | Available and already purchased items are in the same list | Purchased items are in a seperate tab
+Settings | no difference | no difference
 
 ### Hypotheses
 There will be no effect of the way content is structured on Task completion time
