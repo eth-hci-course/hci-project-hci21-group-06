@@ -1,12 +1,5 @@
 <template>
 <div class="shop">
-  <md-card class="card">
-      <md-card-content>
-        <p> Current: </p>
-        <p> Lifetime: </p>
-      </md-card-content>
-  </md-card>
-
   <div class="A" v-if="ABToggle==false">
     <md-tabs md-alignment="fixed" md-active-tab="tab-Store" md-sync-route>
         <md-tab id="tab-Store" md-label="Store" to="/shopA/store"/>
@@ -36,7 +29,7 @@ export default {
     MixedShop
   },
   computed: mapState({
-        ABToggle: state => state.ABTests.ABToggle
+        ABToggle: state => state.ABTests.ABToggle,
     }),
   watch: {
   '$route' (to, from) {

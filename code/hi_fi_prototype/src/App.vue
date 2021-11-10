@@ -27,14 +27,18 @@ export default {
     return {transitionName: 'slide-right'}
   }, 
   computed: mapState({
-        shopRoute: state => (state.ABTests.ABToggle) ? '/shopB' : '/shopA'
+        shopRoute: state => (state.ABTests.ABToggle) ? '/shopB' : '/shopA',
     }),
   watch: {
     '$route' (to, from) {
       this.transitionName = (getPageNumber(to.path) < getPageNumber(from.path)) ? 'slide-right' : 'slide-left'
     },
   },
+  mounted: function() {
+    this.$material.theming.theme = this.$store.state.themes.currentTheme.id
+  }
 }
+
 </script>
 
 <style lang="css" scoped>
@@ -59,20 +63,27 @@ export default {
   @import "~vue-material/dist/theme/engine"; // Import the theme engine
 
   @include md-register-theme("DefaultDark", (
-    primary: #005ecb, // The primary color of your application
-    accent: #b0003a, // The accent or secondary color
+    primary: #005ecb,
+    accent: #b0003a, 
     theme: dark,
   ));
 
   @include md-register-theme("DefaultLight", (
-    primary: #83b9ff, // The primary color of your application
-    accent: #ff6090, // The accent or secondary color
+    primary: #83b9ff,
+    accent: #ff6090, 
     theme: light,
   ));
 
-  @include md-register-theme("test", (
-    primary: #83b9ff, // The primary color of your application
-    accent: #ff6090, // The accent or secondary color
+  @include md-register-theme("PurpleLight", (
+    primary: #d500f9, 
+    accent: #40c4ff, 
+    theme: light,
+  ));
+
+  @include md-register-theme("PurpleDark", (
+    primary: #d500f9, 
+    accent: #40c4ff, 
+    theme: dark,
   ));
 
   @import "~vue-material/dist/theme/all"; 

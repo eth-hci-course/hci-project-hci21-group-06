@@ -11,7 +11,7 @@
 
             </md-card-content>
             <md-card-actions>
-                <md-button class="md-raised md-primary" v-on:click="setTheme(theme.id)" >Equip</md-button>
+                <md-button class="md-raised md-primary" v-on:click="setTheme(theme)" >Equip</md-button>
             </md-card-actions>
         </md-card>
     </div>
@@ -26,7 +26,8 @@ export default {
     }),
     methods: {
         setTheme: function (theme) {
-            this.$material.theming.theme=theme
+            this.$material.theming.theme=theme.id
+            this.$store.commit('setTheme', theme)
         }
     }
 }
