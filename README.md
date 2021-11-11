@@ -186,4 +186,4 @@ move on to the shop, find and equit theme X, then buy and equip theme Y
 We use the app running on a laptop in the webbrowser. As it is a phone app, we use the Iphone X preset from the devtools of any common browser. The participant is seated at the table.
 
 #### Preliminary protocol
-TODO: link to protocol
+[preliminary protocol](Deliverables/Study/Preliminary%20Study%20protocol%20G06.pdf)
