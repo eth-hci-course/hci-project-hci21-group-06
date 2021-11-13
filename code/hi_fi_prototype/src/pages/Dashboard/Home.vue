@@ -1,16 +1,22 @@
 <template>
 <div class="dashboard">
-  <p class="title">Dashboard</p>
-
+  <br><br>
   <div class="upper">
-    <p class="upper-text">you have used</p>
-    <p class="upper-kwh">{{kwh}} KWH</p>
-    <p class="upper-text">resulting in</p>
-    <p class="upper-coins">{{coins}} C</p>
+    <div class="upper-text">you have used</div><br>
+    <div class="upper-kwh md-primary">{{kwh}} KWH</div><br>
+    <div class="upper-text">resulting in</div><br>
+    <div class="upper-coins md-accent" >{{coins}}
+      <div class="svg-wrapper" style="display: inline-flex;align-self: center;top: .125em;position: relative;">
+      <svg width="1em" height="1em" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="23.5" stroke="currentColor" stroke-width="3"/>
+        <path d="M15 25L31 7L26 22L35 25L19 43L24 28L15 25Z" fill="currentColor"/>
+      </svg>
+      </div>
+    </div>
   </div>
 
-  <div class="challenge-wrapper" v-if="ab">
-    <md-card class="challenge" v-for="item in challenges" :key="item.title">
+  <div class="card-wrapper" v-if="ab">
+    <md-card class="card" v-for="item in challenges" :key="item.title">
       <md-card-header>
         <div class="md-title">{{ item.title }}</div>
       </md-card-header>
@@ -48,13 +54,12 @@ export default {
     return {
       kwh: 42,
       coins: 78,
-      ab: true,
+      ab: false,
       challenges: [
         {title: "Chill out", content: "reduce the energy usage of your fridge over the next 7 days by 30%", img: ""},
         {title: "Clean dishes", content: "Over the next 30 days, use your dishwasher only once per day", img: ""},
         {title: "Good cooking", content: "Never use more than two stove plates at once for a week", img: ""},
-        {title: "Not always on", content: "Turn off your Laptop and PC during the night", img: ""},
-        {title: "Not always on", content: "Turn off your Laptop ", img: ""}
+        {title: "Not always on", content: "Turn off your Laptop and PC during the night", img: ""}
       ]
 
 
@@ -66,22 +71,23 @@ export default {
 <style lang="css">
 .dashboard {
 }
-.title {
-}
 .upper {
   font-size: xx-large;
 }
 .upper-text {
   text-align: center;
+  height: 32px;
 }
 .upper-kwh {
   text-align: center;
+  height: 32px;
 }
 .upper-coins {
   text-align: center;
+  height: 32px;
 }
 
-.challenge-wrapper {
+.card-wrapper {
   overflow-x: auto;
   white-space: nowrap;
   display: grid;
@@ -91,7 +97,7 @@ export default {
   grid-gap: 1rem;
   padding: 1rem;
 }
-.challenge {
+.card {
   white-space: normal;
   margin: 5px;
   max-width: 320px;
