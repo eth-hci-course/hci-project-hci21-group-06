@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-
+<br>
   <div class="card-wrapper" v-if="ab">
     <md-card class="card" v-for="item in challenges" :key="item.title">
       <md-card-header>
@@ -33,7 +33,7 @@
   <div class="list-wrapper" v-else>
     <md-list  v-for="item in challenges" :key="item.title">
       <md-list-item class="listitem">
-        <div class="md-list-item-text">
+        <div class="md-list-item-text" @click="item.show = true">
           <span>{{ item.title }}</span>
           <span>{{ item.content }}</span>
         </div>
@@ -41,8 +41,17 @@
         <md-button class="md-icon-button"><md-icon>close</md-icon></md-button>
       </md-list-item>
       <md-divider></md-divider>
+      <div>
+        <md-dialog-confirm
+            :md-active.sync="item.show"
+            :md-title="item.title"
+            :md-content="item.content"
+            md-confirm-text="Accept" >
+        </md-dialog-confirm>
+      </div>
     </md-list>
   </div>
+
 
 
 </div>
@@ -52,14 +61,15 @@
 export default {
   data() {
     return {
+      showDialog: false,
       kwh: 42,
       coins: 78,
       ab: false,
       challenges: [
-        {title: "Chill out", content: "reduce the energy usage of your fridge over the next 7 days by 30%", img: ""},
-        {title: "Clean dishes", content: "Over the next 30 days, use your dishwasher only once per day", img: ""},
-        {title: "Good cooking", content: "Never use more than two stove plates at once for a week", img: ""},
-        {title: "Not always on", content: "Turn off your Laptop and PC during the night", img: ""}
+        {title: "Chill out", content: "reduce the energy usage of your fridge over the next 7 days by 30%", img: "", show: false},
+        {title: "Clean dishes", content: "Over the next 30 days, use your dishwasher only once per day", img: "", show: false},
+        {title: "Good cooking", content: "Never use more than two stove plates at once for a week", img: "", show: false},
+        {title: "Not always on", content: "Turn off your Laptop and PC during the night", img: "", show: false}
       ]
 
 
