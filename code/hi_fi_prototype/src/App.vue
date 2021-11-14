@@ -1,8 +1,10 @@
 <template>
 <div class="page">
-      <div class="content">
-        <router-view/>
-      </div>
+      <md-content>
+      <transition :name="transitionName">
+        <router-view class="routerView"/>
+      </transition>
+      </md-content>
       <div class="bottom-navigator">
         <md-bottom-bar md-type="shift" md-sync-route>
           <md-bottom-bar-item id="bottom-bar-item-Dashboard" md-label="Dashboard" md-icon="dashboard" to='/dashboard'></md-bottom-bar-item>
@@ -14,25 +16,35 @@
       </div>   
 </div>
 </template>
-
+ 
 <script>
+import { mapState } from 'vuex'
+import {getPageNumber} from './utils.js'
+
 export default {
   name: 'App',
-  components: {
-    
-  }
+  data: function () {
+    return {transitionName: 'slide-right'}
+  }, 
+  watch: {
+    '$route' (to, from) {
+      this.transitionName = (getPageNumber(to.path) < getPageNumber(from.path)) ? 'slide-right' : 'slide-left'
+    },
+  },
 }
 </script>
 
 <style lang="css" scoped>
+  @import './router/transitions.css';
   .page{
     display:flex;
     flex-flow: column;
     height: 100vh;
+    overflow-x:hidden;
   }
-  .content{
-    background:gold;
+  .routerView {
     height: 756px;
+    overflow:auto;
   }
   .bottom-navigator{
     bottom: 0;
