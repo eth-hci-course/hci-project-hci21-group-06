@@ -57,6 +57,8 @@
 </template>
 
 <script>
+import {mapState} from "vuex";
+
 export default {
   data() {
     return {
@@ -90,7 +92,10 @@ export default {
   },
   created() {
     window.addEventListener('keydown', this.keyDownHandler)
-  }
+  },
+  computed: mapState({
+    ABToggle: state => state.ABTests.ABToggle
+  })
 }
 </script>
 
