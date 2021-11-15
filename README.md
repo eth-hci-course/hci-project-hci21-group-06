@@ -183,7 +183,7 @@ move on to the usage, find the electricity usage of your fridge over the last 24
 move on to the shop, find and equit theme X, then buy and equip theme Y
 
 #### Apparatus
-We use the app running on a laptop in the webbrowser. As it is a phone app, we use the Iphone X preset from the devtools of any common browser. The participant is seated at the table.
+We use the app running on a phone. The easiest way to do this is having the server running on a laptop and opening the local network page in any phone browser while on the same network. After scrolling a bit to make the adressbar disappear, this should work and interact exactly the same as any native app for our purposes. 
 
 #### Preliminary protocol
 [preliminary protocol](Deliverables/Study/Preliminary%20Study%20protocol%20G06.pdf)
