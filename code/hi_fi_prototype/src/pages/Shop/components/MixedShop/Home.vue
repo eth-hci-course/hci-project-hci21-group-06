@@ -37,12 +37,7 @@
     </md-field>
     </md-dialog-content>
 </md-dialog>
-<md-card class="card">
-      <md-card-content>
-        <p> Current: {{availableCurrency}}</p>
-        <p> Lifetime: {{totalCurrency}}</p>
-      </md-card-content>
-</md-card>
+<CurrencyDisplay/>
 <div class="filters">
     <md-button class="md-icon-button" v-on:click="toggleDirection()">
         <md-icon>swap_vert</md-icon>
@@ -86,7 +81,11 @@
 
 <script>
 import { mapState } from 'vuex'
+import CurrencyDisplay from '../CurrencyDisplay'
 export default {
+    components: {
+        CurrencyDisplay
+    },
     data: () => ({
       showEquipDialog: false,
       showFilterDialog: false,
