@@ -4,7 +4,9 @@ export const getPageNumber = (page) => {
         return 0
       case '/rankings':
         return 1
-      case '/shop':
+      case '/shopA/purchases':
+      case '/shopA/store':
+      case '/shopB':
         return 2
       case '/analytics':
         return 3
@@ -12,5 +14,5 @@ export const getPageNumber = (page) => {
         return 4
       default:
         return -1
-    } 
+    }
   }
