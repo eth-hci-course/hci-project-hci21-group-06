@@ -5,3 +5,6 @@ code/hi_fi_prototype/public
 .idea/hci-project-hci21-group-06.iml
 .idea/modules.xml
 .idea/vcs.xml
+code/.DS_Store
+code/hi_fi_prototype/package-lock.json
+.DS_Store
