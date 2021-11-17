@@ -118,8 +118,8 @@ export const rankings = [
             {place: 123954, name: "Lia DaFranco", score: 48116},
             {place: 123955, name: "Vivianne Lang", score: 32985},
             {place: 123956, name: "You", score: 31267},
-            {place: 123955, name: "John Doe", score: 31264},
-            {place: 123957, name: "Ben Main", score: 31237},
+            {place: 123957, name: "John Doe", score: 31264},
+            {place: 123958, name: "Ben Main", score: 31237},
             {place: 'fill'},
             {place: 893321, name: "Alfred Bole", score: 12},
             {place: 893322, name: "Alexa Golder", score: 7}
@@ -129,9 +129,9 @@ export const rankings = [
 
 
 
+// old data structures
 
-
-export const MyCitysdf= [
+export const MyFriends= [
     ["First","Beat Astli","50000"],
     ["Second","Mike Peters","48255"],
     ["Third","Lia DaFranco","48116"],

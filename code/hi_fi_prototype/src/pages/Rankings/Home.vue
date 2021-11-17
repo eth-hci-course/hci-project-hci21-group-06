@@ -45,12 +45,14 @@
             </div>
           </md-list-item>
           <md-list-item v-else>
-            <div class="md-list-item-text md-title" v-if="item.name=='You'">
+            <div class="md-list-item-text md-title" v-if="item.name=='You'" :style="'color: '+currentColor">
               {{ item.place }}
+              {{"&nbsp;".repeat(10-item.place.toString().length)}}
               {{ item.name}}
             </div>
             <div class="md-list-item-text" v-else>
               {{ item.place }}
+              {{"&nbsp;&nbsp;".repeat(10-item.place.toString().length)}}
               {{ item.name}}
             </div>
             <div class="md-list-action">
@@ -170,6 +172,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 140px;
   }
   .listwrapper {
     margin: 10px;
