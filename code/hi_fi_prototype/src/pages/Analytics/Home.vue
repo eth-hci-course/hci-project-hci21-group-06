@@ -3,8 +3,9 @@
     <md-toolbar :md-elevation="2">
         <span v-if="isBubble" class="md-title">Bubble chart</span>
         <span v-else class="md-title">Graph</span>
+        <span v-if="standbyDevices && isBubble" class="md-title">of standby devices</span>
     </md-toolbar>
-    <md-card class="card selectTime">
+    <md-card v-if="!standbyDevices || !isBubble" class="card selectTime">
       <md-card-content>
         <md-button v-if="timeScale == 'hour'" class="md-raised md-accent">Hour</md-button>
         <md-button v-else v-on:click="timeswitch('hour')">Hour</md-button>
@@ -14,12 +15,30 @@
         <md-button v-else v-on:click="timeswitch('month')">Month</md-button>
       </md-card-content>
     </md-card>
-    <md-card class="card">
+    <md-card v-if="isBubble && !standbyDevices" class="card">
+      <div @click="standbyswitch">
+      <md-card-content v-if="timeScale == 'hour'">
+        <img src="./BubbleHour.png">
+      </md-card-content>
+      <md-card-content v-if="timeScale == 'day'">
+        <img src="./BubbleDay.png">
+      </md-card-content>
+      <md-card-content v-if="timeScale == 'month'">
+        <img src="./BubbleMonth.png">
+      </md-card-content>
+      </div>
+    </md-card>
+    <md-card v-if="!isBubble" class="card">
       <md-card-content>
         <LineChartHour v-if="timeScale == 'hour'"/>
         <LineChartDay v-if="timeScale == 'day'"/>
         <LineChartMonth v-if="timeScale == 'month'"/>
       </md-card-content>
+    </md-card>
+    <md-card v-if="standbyDevices && isBubble" class="card">
+        <div @click="standbyswitch">
+          <img src="./BubbleStandby.png">
+        </div>
     </md-card>
     <md-button v-on:click="gswitch()" class="md-fab">
       <md-icon v-if="isBubble">show_chart</md-icon>
@@ -43,7 +62,8 @@
   data() {
        return {
           isBubble: false,
-          timeScale: "hour"
+          timeScale: "hour",
+          standbyDevices: false
         }
     },
   methods: {
@@ -52,6 +72,9 @@
     },
     timeswitch: function(newTime) {
         this.timeScale = newTime;
+    },
+    standbyswitch: function() {
+      this.standbyDevices = !this.standbyDevices
     }
   }
 };
