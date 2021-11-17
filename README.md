@@ -160,45 +160,30 @@ Our A/B variants will help us decide on which way of structuring the content of 
 ### Differences between A and B
 Screen | A (the 'fancy' prototype) | B (the 'structured' prototype)
 --- | --- | ---
-Dashboard | Colorful cards of different sizes for each challenge | One single plain long list with all challenges, dialogs for details
+Dashboard | Cards of different shapes and sizes and colors for each challenge | One single long list with all challenges
 Rankings | Arrows to switch between different rankings | Dropdown menus to switch between different rankings
-Usage | Bubbles of different sizes show different usages of electricity  | One single graph of all usages
+Usage | Bubbles of different sizes show different usages of electricity  | One single list of all usages
 Shop | Available and already purchased items are in the same list | Purchased items are in a seperate tab
 Settings | no difference | no difference
 
 ### Hypotheses
-- There will be no effect of the way content is structured on Task completion time
-- There will be no effect of the way content is structured on clicks needed
-- There will be no effect of the way content is structured on user satisfaction
+There will be no effect of the way content is structured on Task completion time
+There will be no effect of the way content is structured on clicks needed
+There will be no effect of the way content is structured on user satisfaction
 
 ### Data collection
-We will use a timer that runs in the background which times the user throughout the whole study. This timer also measures the time spent on each of the pages.
-
-We measure
-- the time it takes for the user to complete all tasks.
-- the time the user takes for each of the screens.
-- the amount of clicks users perform overall
-- and the amount of clicks per page
-
+We will use a timer that runs in the background which times the user throughout the whole study. We measure the time it takes for the user to complete all tasks. We also measure the amount of clicks and how many unneeded clicks users perform
 We will also do a survey afterwards to get the users opinion on how well they liked the experience
-- Questionnaire #2 after each version
-- Questionnaire #3 to compare both versions
 
 ### Experiment procedure
 #### Task
-1. locate the challenges section on the dashboard, locate and accept the **dishwasher challenge**, fill the reward into the sheet, locate and accept the **phone challenge**, also fill in the reward on the sheet
-2. move on to the rankings, find your place on the **monthly family ranking** and fill it into the sheet, then find your place on the **annual country ranking** and also fill it into the sheet
-3. move on to the usage, find the electricity usage of your **Fridge** over the last 24h, then find the electricity usage of your **PC** over the last 7 days, fill both into the sheet
-4. move on to the shop, find and equit **Theme X**, then buy and equip **Theme Y**
+locate the challenges section on the dashboard, locate and accept the dishwasher challenge, locate and dismiss the phone challenge
+move on to the rankings, find your place on the monthly family ranking, then find your place on the annual country ranking
+move on to the usage, find the electricity usage of your fridge over the last 24h, then find the electricity usage of your pc over the last 7 days
+move on to the shop, find and equit theme X, then buy and equip theme Y
 
 #### Apparatus
-We use the app running on a phone. The easiest way to do this is having the server running on a laptop and opening the local network page in any phone browser while on the same network. After scrolling a bit to make the adressbar disappear, this should work and interact exactly the same as any native app for our purposes. The user is seated all the time at a table. The phone can be any phone of the tester with a sufficiently large screen (6in+).
+We use the app running on a laptop in the webbrowser. As it is a phone app, we use the Iphone X preset from the devtools of any common browser. The participant is seated at the table.
 
 #### Preliminary protocol
-[preliminary protocol (original version)](Deliverables/Study/Preliminary%20Study%20protocol%20G06.pdf)
-
-[Questionnaire #1](https://forms.gle/v2PWSzPsVBZnPuM3A)
-
-[Questionnaire #2](https://forms.gle/UX1a4CnVWnKAGzCb6)
-
-[Questionnaire #3](https://forms.gle/Jy2eHnu6oRBG4VqM6)
+[preliminary protocol](Deliverables/Study/Preliminary%20Study%20protocol%20G06.pdf)
