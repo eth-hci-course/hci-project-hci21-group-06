@@ -183,7 +183,7 @@ We will also do a survey afterwards to get the users opinion on how well they li
 4. move on to the shop, find and equit **Theme X**, then buy and equip **Theme Y**
 
 #### Apparatus
-We use the app running on a phone. The easiest way to do this is having the server running on a laptop and opening the local network page in any phone browser while on the same network. After scrolling a bit to make the adressbar disappear, this should work and interact exactly the same as any native app for our purposes. 
+We use the app running on a phone. The easiest way to do this is having the server running on a laptop and opening the local network page in any phone browser while on the same network. After scrolling a bit to make the adressbar disappear, this should work and interact exactly the same as any native app for our purposes. The user is seated all the time at a table. The phone can be any phone of the tester with a sufficiently large screen (6in+).
 
 #### Preliminary protocol
 [preliminary protocol (original version)](Deliverables/Study/Preliminary%20Study%20protocol%20G06.pdf)
