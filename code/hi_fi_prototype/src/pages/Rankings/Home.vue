@@ -66,54 +66,11 @@
 
 <script>
   import {MyFriends,MyCity,MyCountry,Worldwide} from './Components/RankingData.js';
+  import { mapState } from 'vuex'
 
-  var vm = new Vue({
+  export default {
     el: '#vue-instance',
-    data: {
-      rankings: [
-        { name: 'My Friends' },
-        { name: 'My City' },
-        { name: 'My Country' },
-        { name: 'Worldwide' }
-      ],
-      selectedRanking: null,
-      user: {
-    	  address: {
-      	  ranking: null
-        }
-      }
-    },
-    methods: {
-      changeRanking (event) {
-        this.user.address.ranking = event.target.value
-        this.selectedRanking = event.target.options[event.target.options.selectedIndex].text
-      }
-    }
-  });
-
-  switch(SelectedValueDropDown){
-    case 'My Friends':
-      array=MyFriends;
-    break;
-
-    case "My City":
-      array=MyCity;
-    break;
-
-    case "My Country":
-      array=MyCountry;
-    break;
-
-    case "Worldwide":
-      array=Worldwide;
-    break;
-
-    default:
-      array=MyFriends
-  }
-
-  export default{
-    name: 'Ranking',
+    name: 'ranking',
     data: () => ({
       array: MyFriends,
       Rank_Top1: array[1][1],
@@ -133,7 +90,50 @@
       Coins_Top3: array[3][3],
       Coins_Bottom1: array[4][3],
       Coins_Bottom2: array[5][3],
-      Coins_Bottom3: array[6][3]
+      Coins_Bottom3: array[6][3],
+      rankings: [
+        { name: 'My Friends' },
+        { name: 'My City' },
+        { name: 'My Country' },
+        { name: 'Worldwide' }
+      ],
+      selectedRanking: null,
+      user: {
+    	  address: {
+      	  ranking: null
+        }
+      }
+    }),
+    methods: {
+      changeRanking (event) {
+        this.user.address.ranking = event.target.value
+        this.selectedRanking = event.target.options[event.target.options.selectedIndex].text
+      },
+      choose (SelectedValueDropDown) {
+        switch(SelectedValueDropDown){
+          case 'My Friends':
+            array=MyFriends;
+          break;
+
+          case "My City":
+            array=MyCity;
+          break;
+
+          case "My Country":
+            array=MyCountry;
+          break;
+
+          case "Worldwide":
+            array=Worldwide;
+          break;
+
+          default:
+            array=MyFriends
+        }
+      }
+    },
+    computed: mapState({
+            ABToggle: state => state.ABTests.ABToggle
     })
   }
 </script>
