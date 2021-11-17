@@ -172,8 +172,17 @@ Settings | no difference | no difference
 - There will be no effect of the way content is structured on user satisfaction
 
 ### Data collection
-We will use a timer that runs in the background which times the user throughout the whole study. We measure the time it takes for the user to complete all tasks. We also measure the amount of clicks and how many unneeded clicks users perform
+We will use a timer that runs in the background which times the user throughout the whole study. This timer also measures the time spent on each of the pages.
+
+We measure
+- the time it takes for the user to complete all tasks.
+- the time the user takes for each of the screens.
+- the amount of clicks users perform overall
+- and the amount of clicks per page
+
 We will also do a survey afterwards to get the users opinion on how well they liked the experience
+- Questionnaire #2 after each version
+- Questionnaire #3 to compare both versions
 
 ### Experiment procedure
 #### Task
