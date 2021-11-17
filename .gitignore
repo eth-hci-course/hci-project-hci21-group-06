@@ -5,3 +5,5 @@ code/hi_fi_prototype/public
 code/.DS_Store
 code/hi_fi_prototype/package-lock.json
 .DS_Store
+*.xml
+.idea/hci-project-hci21-group-06.iml
