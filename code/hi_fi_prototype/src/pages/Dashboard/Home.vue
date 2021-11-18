@@ -1,10 +1,7 @@
 <template>
 <div class="dashboard">
   <md-content class="upper">
-    <div class="upper-text">you have used</div>
-    <div class="upper-kwh">{{kwh}} KWH</div>
-    <div class="upper-text">resulting in</div>
-    <div class="upper-coins" ><div>{{currentCurrency}}
+    <div class="upper-coins" ><div>Banked: {{currentCurrency}}
       <div class="svg-wrapper" style="display: inline-flex;align-self: center;top: .125em;position: relative;">
       <svg width="1em" height="1em" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="25" cy="25" r="23.5" :stroke="currentColor" stroke-width="3"/>
@@ -12,6 +9,8 @@
       </svg>
       </div></div>
     </div>
+    <img src="./sandwatch.png">
+    <div class="upper-kwh">Used: {{kwh}} KWH</div>
   </md-content>
   <md-content class="card-wrapper md-elevation-4" v-if="ABToggle">
     <md-card class="card md-elevation-4 md-primary" v-for="item in challenges" :key="item.title">
@@ -123,13 +122,21 @@ export default {
 </script>
 
 <style lang="css" scoped>
+img {
+  height:200px;
+  width:200px;
+  margin-left: auto;
+  margin-right:auto;
+}
 .dashboard {
   display:flex;
   flex-direction: column;
 }
 .upper {
+  justify-content: center;
   font-size: xx-large;
-  height: 40%;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
 }
 .upper-text {
@@ -153,8 +160,10 @@ export default {
 
 .card-wrapper {
   overflow: scroll;
-  height: 50%;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
+  overflow-x:hidden;
 }
 .card {
   margin: 10px;
