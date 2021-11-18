@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="settingspage">
     <center><p><font size="7"> Settings </font></p></center>
     <br />
 
@@ -31,13 +31,6 @@
       </tr>
     </table> -->
 
-      <md-card class="card">
-
-      <md-card-content>
-        <b>Delete account</b> 
-      </md-card-content>
-
-    </md-card>
   </div>
 </template>
 
@@ -55,6 +48,10 @@
 </script>
 
 <style lang="css" scoped>
+  .settingspage{
+    margin: 40px;
+  }
+
   .md-switch {
     margin: auto;
   }

@@ -82,6 +82,8 @@
 
 <style module>
 .home{
+  display: flex;
+  flex-direction: column;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -89,7 +91,8 @@
 }
 
 .md-fab{
-  margin-top: 70px;
+  position: fixed;
+  bottom: 70px;
   left: 80%;
 }
 

@@ -13,7 +13,7 @@
       </div></div>
     </div>
   </md-content>
-  <md-content class="card-wrapper md-elevation-4" v-if="ab">
+  <md-content class="card-wrapper md-elevation-4" v-if="ABToggle">
     <md-card class="card md-elevation-4 md-primary" v-for="item in challenges" :key="item.title">
       <md-card-header>
         <md-card-header-text>
@@ -113,9 +113,10 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .dashboard {
-  height: 100%;
+  display:flex;
+  flex-direction: column;
 }
 .upper {
   font-size: xx-large;

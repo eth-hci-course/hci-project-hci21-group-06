@@ -1,10 +1,10 @@
 <template>
   <div style="text-align: center">
     <div class="upper">
-      <div class="dropdownwrapper" v-if="ab">
+      <div class="dropdownwrapper" v-if="ABToggle">
         <md-field class="dropdown">
           <label for="timeID">Time</label>
-          <md-select v-model="timeID" name="timeID" id="timeID" @input="updateDrop()">
+          <md-select v-model="timeID" name="timeID" id="timeID">
             <md-option value="0">{{ times[0].display }}</md-option>
             <md-option value="1">{{ times[1].display }}</md-option>
             <md-option value="2">{{ times[2].display }}</md-option>
@@ -13,7 +13,7 @@
         </md-field>
         <md-field class="dropdown">
           <label for="groupID">Group</label>
-          <md-select v-model="groupID" name="groupID" id="groupID" @input="updateDrop()">
+          <md-select v-model="groupID" name="groupID" id="groupID">
             <md-option value="0" >{{groups[0].display}}</md-option>
             <md-option value="1">{{groups[1].display}}</md-option>
             <md-option value="2">{{groups[2].display}}</md-option>
@@ -81,7 +81,6 @@
     data: () => ({
       ab: true,
       clicks: 0,
-      selectedGroup: {name: "family", display: "Family"},
       groupID: 0,
       groups: [
         {name: "family", display: "Family"},
@@ -89,7 +88,6 @@
         {name: "country", display: "Country"},
         {name: "world", display: "Worldwide"},
       ],
-      selectedTime: {name: "day", display: "Daily"},
       timeID: 0,
       times: [
         {name: "day", display: "Daily"},
@@ -97,9 +95,6 @@
         {name: "month", display: "Monthly"},
         {name: "year", display: "Yearly"},
       ],
-      ranking: [
-      ],
-
     }),
     methods: {
       keyDownHandler(e) {
@@ -108,12 +103,6 @@
       },
       clickHandler() {
         this.clicks++;
-      },
-      updateDrop() {
-        console.log("ran update");
-        this.selectedGroup = this.groups[this.groupID];
-        this.selectedTime = this.times[this.timeID];
-        this.ranking = rankings[this.groupID][this.timeID];
       },
       slide(right, group) {
         if(right && group) {
@@ -133,19 +122,21 @@
           this.timeID %= 4;
           this.selectedTime = this.times[this.timeID];
         }
-        this.ranking = rankings[this.groupID][this.timeID];
-
       }
     },
     created() {
       window.addEventListener('keyown', this.keyDownHandler),
-      window.addEventListener('click', this.clickHandler),
-          this.ranking = rankings[this.groupID][this.timeID];
+      window.addEventListener('click', this.clickHandler);
     },
-    computed: mapState({
-      ABToggle: state => state.ABTests.ABToggle,
-      currentColor: state => state.themes.currentTheme.accent,
-    })
+    computed: {
+      ...mapState({
+        ABToggle: state => state.ABTests.ABToggle,
+        currentColor: state => state.themes.currentTheme.accent,
+      }),
+      selectedGroup (){return this.groups[this.groupID]},
+      selectedTime (){return this.times[this.timeID]},
+      ranking (){return rankings[this.groupID][this.timeID]},
+      }
   }
 </script>
 
