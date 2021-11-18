@@ -93,6 +93,46 @@ const state = () => ({
             accentCategory: "yellow",
             theme: "dark"
         },
+        {
+            name: "Teal Grey Light",
+            id: "TealGreyLight",
+            primary: '#26a69a',
+            accent: '#afbdc4',
+            cost: 20,
+            primaryCategory: "teal",
+            accentCategory: "grey",
+            theme: "light"
+        },
+        {
+            name: "Teal Grey Dark",
+            id: "TealGreyDark",
+            primary: '#26a69a',
+            accent: '#afbdc4',
+            cost: 20,
+            primaryCategory: "teal",
+            accentCategory: "grey",
+            theme: "dark"
+        },
+        {
+            name: "Cyan Red Light",
+            id: "CyanRedLight",
+            primary: '#26a69a',
+            accent: '#afbdc4',
+            cost: 20,
+            primaryCategory: "cyan",
+            accentCategory: "red",
+            theme: "light"
+        },
+        {
+            name: "Cyan Red Dark",
+            id: "CyanRedDark",
+            primary: '#26a69a',
+            accent: '#afbdc4',
+            cost: 20,
+            primaryCategory: "cyan",
+            accentCategory: "red",
+            theme: "dark"
+        },
     ],
 })
 
