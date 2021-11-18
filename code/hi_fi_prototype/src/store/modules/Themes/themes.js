@@ -74,6 +74,66 @@ const state = () => ({
             theme: "dark"
         },
         {
+            name: "Blue Yellow Light",
+            id: "BlueYellowLight",
+            primary: '#81d4fa',
+            accent: '#fdd835',
+            cost: 20,
+            primaryCategory: "lightblue",
+            accentCategory: "yellow",
+            theme: "light"
+        },
+        {
+            name: "Blue Yellow Dark",
+            id: "BlueYellowDark",
+            primary: '#81d4fa',
+            accent: '#fdd835',
+            cost: 20,
+            primaryCategory: "lightblue",
+            accentCategory: "yellow",
+            theme: "dark"
+        },
+        {
+            name: "Green Brown Light",
+            id: "GreenBrownLight",
+            primary: '#1b5e20',
+            accent: '#795548',
+            cost: 100,
+            primaryCategory: "green",
+            accentCategory: "brown",
+            theme: "light"
+        },
+        {
+            name: "Green Brown Dark",
+            id: "GreenBrownDark",
+            primary: '#1b5e20',
+            accent: '#795548',
+            cost: 100,
+            primaryCategory: "green",
+            accentCategory: "brown",
+            theme: "dark"
+        },
+        {
+            name: "Black Red Light",
+            id: "BlackRedLight",
+            primary: '#bf360c',
+            accent: '#455a64',
+            cost: 50,
+            primaryCategory: "deeporange",
+            accentCategory: "bluegrey",
+            theme: "light"
+        },
+        {
+            name: "Black Red Dark",
+            id: "BlackRedDark",
+            primary: '#bf360c',
+            accent: '#455a64',
+            cost: 50,
+            primaryCategory: "deeporange",
+            accentCategory: "bluegrey",
+            theme: "dark"
+        },
+        {
             name: "Green Yellow Light",
             id: "GreenYellowLight",
             primary: '#1de9b6',

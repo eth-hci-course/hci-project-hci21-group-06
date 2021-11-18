@@ -87,6 +87,42 @@ export default {
     theme: dark,
   ));
 
+  @include md-register-theme("BlueYellowLight", (
+    primary: #81d4fa, 
+    accent: #fdd835, 
+    theme: light,
+  ));
+
+    @include md-register-theme("BlueYellowDark", (
+    primary: #81d4fa, 
+    accent: #fdd835, 
+    theme: dark,
+  ));
+
+    @include md-register-theme("BlackRedLight", (
+    primary: #bf360c, 
+    accent: #455a64, 
+    theme: light,
+  ));
+
+    @include md-register-theme("BlackRedDark", (
+    primary: #bf360c, 
+    accent: #455a64, 
+    theme: dark,
+  ));
+
+    @include md-register-theme("GreenBrownLight", (
+    primary: #1b5e20, 
+    accent: #795548, 
+    theme: light,
+  ));
+
+    @include md-register-theme("GreenBrownDark", (
+    primary: #1b5e20, 
+    accent: #795548, 
+    theme: dark,
+  ));
+
   @include md-register-theme("GreenYellowLight", (
     primary: #1de9b6, 
     accent: #ffea00, 
