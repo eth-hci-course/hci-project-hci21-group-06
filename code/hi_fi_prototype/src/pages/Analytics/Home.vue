@@ -109,6 +109,8 @@ import { mapState } from 'vuex'
 
 <style module>
 .home{
+  display: flex;
+  flex-direction: column;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -116,7 +118,8 @@ import { mapState } from 'vuex'
 }
 
 .md-fab{
-  margin-top: 55px;
+  position: fixed;
+  bottom: 70px;
   left: 80%;
 }
 
