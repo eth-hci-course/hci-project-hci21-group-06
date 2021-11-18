@@ -32,6 +32,17 @@ module.exports = {
           ],
         },
         {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              esModule: false,
+            },
+          },
+        ],
+      },
+      {
           test: /\.scss$/,
           use: [
             'vue-style-loader',
