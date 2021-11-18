@@ -1,8 +1,9 @@
 <template>
   <div class="home">
     <md-toolbar :md-elevation="2">
-        <span v-if="isBubble" class="md-title">Bubble chart</span>
-        <span v-else class="md-title">Graph</span>
+        <span v-if="isBubble && !ABToggle" class="md-title">Bubble chart</span>
+        <span v-if="isBubble && ABToggle" class="md-title">List</span>
+        <span v-if="!isBubble" class="md-title">Graph</span>
         <span v-if="standbyDevices && isBubble" class="md-title">of standby devices</span>
     </md-toolbar>
     <md-card v-if="!standbyDevices || !isBubble" class="card selectTime">
@@ -15,7 +16,7 @@
         <md-button v-else v-on:click="timeswitch('month')">Month</md-button>
       </md-card-content>
     </md-card>
-    <md-card v-if="isBubble && !standbyDevices" class="card">
+    <md-card v-if="isBubble && !standbyDevices && !ABToggle" class="card">
       <div @click="standbyswitch">
       <md-card-content v-if="timeScale == 'hour'">
         <img src="./BubbleHour.png">
@@ -28,6 +29,15 @@
       </md-card-content>
       </div>
     </md-card>
+    <md-card v-if="isBubble && !standbyDevices && ABToggle" class="card">
+      <div @click="standbyswitch">
+      <md-card-content>
+        <BarChartHour v-if="timeScale == 'hour'"/>
+        <BarChartDay v-if="timeScale == 'day'"/>
+        <BarChartMonth v-if="timeScale == 'month'"/>
+      </md-card-content>
+      </div>
+    </md-card>
     <md-card v-if="!isBubble" class="card">
       <md-card-content>
         <LineChartHour v-if="timeScale == 'hour'"/>
@@ -35,9 +45,14 @@
         <LineChartMonth v-if="timeScale == 'month'"/>
       </md-card-content>
     </md-card>
-    <md-card v-if="standbyDevices && isBubble" class="card">
+    <md-card v-if="standbyDevices && isBubble && !ABToggle" class="card">
         <div @click="standbyswitch">
           <img src="./BubbleStandby.png">
+        </div>
+    </md-card>
+    <md-card v-if="standbyDevices && isBubble && ABToggle" class="card">
+        <div @click="standbyswitch">
+          <BarChartSD/>
         </div>
     </md-card>
     <md-button v-on:click="gswitch()" class="md-fab">
@@ -51,13 +66,25 @@
   import LineChartHour from "./Components/LineChartHour.vue"
   import LineChartDay from "./Components/LineChartDay.vue"
   import LineChartMonth from "./Components/LineChartMonth.vue"
+  import BarChartHour from "./Components/BarChartHour.vue"
+  import BarChartDay from "./Components/BarChartDay.vue"
+  import BarChartMonth from "./Components/BarChartMonth.vue"
+  import BarChartSD from "./Components/BarChartSD.vue"
+import { mapState } from 'vuex'
 
   export default {
   name: "Home",
+  computed: mapState({
+    ABToggle: state => state.ABTests.ABToggle
+  }),
   components: {
     LineChartHour,
     LineChartDay,
-    LineChartMonth
+    LineChartMonth,
+    BarChartHour,
+    BarChartDay,
+    BarChartMonth,
+    BarChartSD
   },
   data() {
        return {
@@ -89,7 +116,7 @@
 }
 
 .md-fab{
-  margin-top: 70px;
+  margin-top: 55px;
   left: 80%;
 }
 
