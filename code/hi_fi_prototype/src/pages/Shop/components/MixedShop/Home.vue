@@ -184,7 +184,7 @@ export default {
         },
         equipTheme: function (theme) {
             this.$material.theming.theme=theme.id
-            this.$store.commit('setTheme', this.theme)
+            this.$store.commit('setTheme', theme)
         },
         removeFilter: function(filter) {
             const index = this.filters.indexOf(filter)
