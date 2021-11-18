@@ -172,8 +172,17 @@ Settings | no difference | no difference
 - There will be no effect of the way content is structured on user satisfaction
 
 ### Data collection
-We will use a timer that runs in the background which times the user throughout the whole study. We measure the time it takes for the user to complete all tasks. We also measure the amount of clicks and how many unneeded clicks users perform
+We will use a timer that runs in the background which times the user throughout the whole study. This timer also measures the time spent on each of the pages.
+
+We measure
+- the time it takes for the user to complete all tasks.
+- the time the user takes for each of the screens.
+- the amount of clicks users perform overall
+- and the amount of clicks per page
+
 We will also do a survey afterwards to get the users opinion on how well they liked the experience
+- Questionnaire #2 after each version
+- Questionnaire #3 to compare both versions
 
 ### Experiment procedure
 #### Task
@@ -183,12 +192,12 @@ We will also do a survey afterwards to get the users opinion on how well they li
 4. move on to the shop, find and equit **Theme X**, then buy and equip **Theme Y**
 
 #### Apparatus
-We use the app running on a phone. The easiest way to do this is having the server running on a laptop and opening the local network page in any phone browser while on the same network. After scrolling a bit to make the adressbar disappear, this should work and interact exactly the same as any native app for our purposes. 
+We use the app running on a phone. The easiest way to do this is having the server running on a laptop and opening the local network page in any phone browser while on the same network. After scrolling a bit to make the adressbar disappear, this should work and interact exactly the same as any native app for our purposes. The user is seated all the time at a table. The phone can be any phone of the tester with a sufficiently large screen (6in+).
 
 #### Preliminary protocol
 [preliminary protocol (original version)](Deliverables/Study/Preliminary%20Study%20protocol%20G06.pdf)
 
-TODO Questionnaire #1
+[Questionnaire #1](https://forms.gle/v2PWSzPsVBZnPuM3A)
 
 [Questionnaire #2](https://forms.gle/UX1a4CnVWnKAGzCb6)
 
