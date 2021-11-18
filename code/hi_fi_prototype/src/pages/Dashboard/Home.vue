@@ -94,16 +94,20 @@ export default {
     }
   },
   methods: {
+    clickHandler() {
+      console.log("recorded click");
+      this.$store.commit("incrementDashboard");
+    },
     onConfirm(item) {
       item.accepted = true
     },
-    keyDownHandler(e) {
-      console.log(e.key)
-      this.ab = !this.ab;
-    },
   },
+
   created() {
-    window.addEventListener('keydown', this.keyDownHandler)
+    window.addEventListener('click', this.clickHandler);
+  },
+  beforeDestroy() {
+    window.removeEventListener('click', this.clickHandler);
   },
   computed: mapState({
     ABToggle: state => state.ABTests.ABToggle,

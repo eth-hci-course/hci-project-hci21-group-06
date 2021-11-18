@@ -28,6 +28,18 @@ export default {
     PureShop,
     MixedShop
   },
+  methods: {
+    clickHandler() {
+      console.log("recorded click in shop");
+      this.$store.commit("incrementShop");
+    },
+  },
+  created() {
+    window.addEventListener('click', this.clickHandler);
+  },
+  beforeDestroy() {
+    window.removeEventListener('click', this.clickHandler);
+  },
   computed: mapState({
         ABToggle: state => state.ABTests.ABToggle,
     }),

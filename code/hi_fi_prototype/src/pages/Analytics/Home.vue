@@ -102,8 +102,18 @@ import { mapState } from 'vuex'
     },
     standbyswitch: function() {
       this.standbyDevices = !this.standbyDevices
-    }
-  }
+    },
+    clickHandler() {
+      console.log("recorded click");
+      this.$store.commit("incrementAnalytics");
+    },
+  },
+  created() {
+    window.addEventListener('click', this.clickHandler);
+  },
+  beforeDestroy() {
+    window.removeEventListener('click', this.clickHandler);
+  },
 };
 </script>
 

@@ -79,8 +79,6 @@
   export default {
     name: 'ranking',
     data: () => ({
-      ab: true,
-      clicks: 0,
       groupID: 0,
       groups: [
         {name: "family", display: "Family"},
@@ -97,12 +95,9 @@
       ],
     }),
     methods: {
-      keyDownHandler(e) {
-        console.log(e.key)
-        this.ab = !this.ab;
-      },
       clickHandler() {
-        this.clicks++;
+        console.log("recorded click");
+        this.$store.commit("incrementRanking");
       },
       slide(right, group) {
         if(right && group) {
@@ -122,16 +117,20 @@
           this.timeID %= 4;
           this.selectedTime = this.times[this.timeID];
         }
-      }
+      },
+
     },
     created() {
-      window.addEventListener('keyown', this.keyDownHandler),
       window.addEventListener('click', this.clickHandler);
+    },
+    beforeDestroy() {
+      window.removeEventListener('click', this.clickHandler);
     },
     computed: {
       ...mapState({
         ABToggle: state => state.ABTests.ABToggle,
         currentColor: state => state.themes.currentTheme.accent,
+        clicksRanking: state => state.ABTests.clicksRanking,
       }),
       selectedGroup (){return this.groups[this.groupID]},
       selectedTime (){return this.times[this.timeID]},
