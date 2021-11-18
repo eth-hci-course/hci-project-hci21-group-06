@@ -135,5 +135,29 @@ export default {
     theme: dark,
   ));
 
+  @include md-register-theme("TealGreyLight", (
+    primary: #26a69a, 
+    accent: #afbdc4, 
+    theme: light,
+  ));
+
+  @include md-register-theme("TealGreyDark", (
+    primary: #26a69a, 
+    accent: #afbdc4, 
+    theme: dark,
+  ));
+
+  @include md-register-theme("CyanRedLight", (
+    primary: #80deea, 
+    accent: #ef5350, 
+    theme: light,
+  ));
+
+  @include md-register-theme("CyanRedDark", (
+    primary: #80deea, 
+    accent: #ef5350, 
+    theme: dark,
+  ));
+
   @import "~vue-material/dist/theme/all"; 
 </style>
