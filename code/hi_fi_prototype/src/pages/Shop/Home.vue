@@ -21,7 +21,10 @@ import { mapState } from 'vuex'
 
 export default {
   data: function () {
-    return {transitionName: 'slide-right'}
+    return {
+      startTime: 0,
+      transitionName: 'slide-right'
+    }
   }, 
   components: {
     PurePurchases,
@@ -36,9 +39,13 @@ export default {
   },
   created() {
     window.addEventListener('click', this.clickHandler);
+    const current = new Date();
+    this.startTime = current.getTime();
   },
   beforeDestroy() {
     window.removeEventListener('click', this.clickHandler);
+    const current2 = new Date();
+    this.$store.commit("incrementTimeShop", current2.getTime()-this.startTime);
   },
   computed: mapState({
         ABToggle: state => state.ABTests.ABToggle,

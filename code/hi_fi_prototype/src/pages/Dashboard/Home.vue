@@ -80,6 +80,7 @@ export default {
     return {
       kwh: 42,
       ab: true,
+      startTime: 0,
       challenges: [
         {title: "Chill out", content: "reduce the energy usage of your fridge over the next 7 days by 30%", reward: 120, show: false, accepted: false},
         {title: "Clean dishes", content: "Over the next 30 days, use your dishwasher only once per day", reward: 120, show: false, accepted: false},
@@ -105,9 +106,13 @@ export default {
 
   created() {
     window.addEventListener('click', this.clickHandler);
+    const current = new Date();
+    this.startTime = current.getTime();
   },
   beforeDestroy() {
     window.removeEventListener('click', this.clickHandler);
+    const current2 = new Date();
+    this.$store.commit("incrementTimeDashboard", current2.getTime()-this.startTime);
   },
   computed: mapState({
     ABToggle: state => state.ABTests.ABToggle,

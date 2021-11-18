@@ -1,7 +1,7 @@
 <template>
   <div style="text-align: center">
     <div class="upper">
-      <div class="dropdownwrapper" v-if="ABToggle">
+      <div class="dropdownwrapper" v-if="!ABToggle">
         <md-field class="dropdown">
           <label for="timeID">Time</label>
           <md-select v-model="timeID" name="timeID" id="timeID">
@@ -80,6 +80,7 @@
     name: 'ranking',
     data: () => ({
       groupID: 0,
+      startTime: 0,
       groups: [
         {name: "family", display: "Family"},
         {name: "friends", display: "Friends"},
@@ -122,9 +123,13 @@
     },
     created() {
       window.addEventListener('click', this.clickHandler);
+      const current = new Date();
+      this.startTime = current.getTime();
     },
     beforeDestroy() {
       window.removeEventListener('click', this.clickHandler);
+      const current2 = new Date();
+      this.$store.commit("incrementTimeRanking", current2.getTime()-this.startTime);
     },
     computed: {
       ...mapState({

@@ -1,57 +1,47 @@
 <template>
   <div class="settingspage">
-    <center><p><font size="7"> Settings </font></p></center>
-    <br />
-
-    <md-avatar class="md-avatar-icon md-large md-primary">
-     <md-icon>person_outline</md-icon>
-    </md-avatar>
-
-    <center><p><font size="5"><b>Your Name</b></font></p></center>
-    <br><br>
-    <p style="text-align:left"><md-switch v-model="boolean_daily">Daily Notification</md-switch></p> <br>
-    <p style="text-align:left"><md-switch v-model="boolean_contacts">Show Contacts</md-switch></p> <br>
-    <p style="text-align:left"><md-switch v-model="boolean_newsletter">Email Newsletter</md-switch></p> <br>
-    <p style="text-align:left"><md-switch v-model="boolean_incognito">Incognito Mode</md-switch></p> <br>
-
-    <md-button @click="delPressed=true">Delete Account</md-button>
-    <md-dialog-confirm
-        :md-active.sync="delPressed"
-        md-title="Delete Account?"
-        md-content="Are you sure you want to delete your account? This action cannot be undone!"
-        md-confirm-text="Agree"
-        md-cancel-text="Disagree"
-        @md-cancel="onCancel"
-        @md-confirm="onConfirm" />
-    <md-dialog-confirm
-        :md-active.sync="showDebug"
-        md-title="Delete Account?"
-        md-content="Are you sure you want to delete your account? This action cannot be undone!"
-        md-confirm-text="Close"
-        @md-confirm="onCancel">
+    <div v-if="showDebug">
+      <h2>Clicks</h2>
       <p>Dashboard: {{clicksDashboard}}</p>
       <p>Ranking: {{clicksRanking}}</p>
       <p>Shop: {{clicksShop}}</p>
       <p>Analytics: {{clicksAnalytics}}</p>
       <p>Settings: {{clicksSettings}}</p>
-    </md-dialog-confirm>
-    <!-- If you want to show what the value of the params is  -->
-    <!-- <table>
-      <tr>
-        <th>Daily Notification</th>
-        <th>Show Contacts</th>
-        <th>Newsletter</th>
-        <th>Incognito</th>
-      </tr>
+      <br>
+      <h2>Time</h2>
+      <p>Dashboard: {{Math.round(timeDashboard/1000)}}s</p>
+      <p>Ranking: {{Math.round(timeRanking/1000)}}s</p>
+      <p>Shop: {{Math.round(timeShop/1000)}}s</p>
+      <p>Analytics: {{Math.round(timeAnalytics/1000)}}s</p>
+      <p>Settings: {{Math.round(timeSettings/1000)}}s</p>
+      <md-button @click="switchAB(true)" class="md-raised md-primary">Set A</md-button><md-button @click="switchAB(false)" class="md-raised md-primary">Set B</md-button>
+      <md-button @click="showDebug=false" class="md-raised md-accent">Close Debug</md-button>
+    </div>
+    <div v-else>
+      <center><p><font size="7"> Settings </font></p></center>
+      <br />
 
-      <tr>
-        <td>{{ boolean_daily }}</td>
-        <td>{{ boolean_contacts }}</td>
-        <td>{{ boolean_newsletter }}</td>
-        <td>{{ boolean_incognito }}</td>
-      </tr>
-    </table> -->
+      <md-avatar class="md-avatar-icon md-large md-primary">
+       <md-icon>person_outline</md-icon>
+      </md-avatar>
 
+      <center><p><font size="5"><b>Your Name</b></font></p></center>
+      <br><br>
+      <p style="text-align:left"><md-switch v-model="boolean_daily">Daily Notification</md-switch></p> <br>
+      <p style="text-align:left"><md-switch v-model="boolean_contacts">Show Contacts</md-switch></p> <br>
+      <p style="text-align:left"><md-switch v-model="boolean_newsletter">Email Newsletter</md-switch></p> <br>
+      <p style="text-align:left"><md-switch v-model="boolean_incognito">Incognito Mode</md-switch></p> <br>
+
+      <md-button @click="delPressed=true" class="md-accent md-raised delbutton">Delete Account</md-button>
+      <md-dialog-confirm
+          :md-active.sync="delPressed"
+          md-title="Delete Account?"
+          md-content="Are you sure you want to delete your account? This action cannot be undone!"
+          md-confirm-text="Agree"
+          md-cancel-text="Disagree"
+          @md-cancel="onCancel"
+          @md-confirm="onConfirm" />
+    </div>
   </div>
 </template>
 
@@ -60,14 +50,15 @@
 
   export default {
     name: 'RegularSwitch',
-    delPressed: false,
-    showDebug: false,
     data: () => ({
+      delPressed: false,
+      showDebug: false,
       array: [],
       boolean_daily: true,
       boolean_contacts: true,
       boolean_newsletter: false,
       boolean_incognito: false,
+      startTime: 0,
     }),
     methods: {
       clickHandler() {
@@ -80,14 +71,21 @@
       onCancel() {
         this.showDebug=false;
         this.delPressed=false;
+      },
+      switchAB(newVal) {
+        this.$store.commit("setAB", newVal);
       }
 
     },
     created() {
       window.addEventListener('click', this.clickHandler);
+      const current = new Date();
+      this.startTime = current.getTime();
     },
     beforeDestroy() {
       window.removeEventListener('click', this.clickHandler);
+      const current2 = new Date();
+      this.$store.commit("incrementTimeSettings", current2.getTime()-this.startTime);
     },
     computed: {
       ...mapState({
@@ -98,6 +96,11 @@
         clicksShop: state => state.ABTests.clicksShop,
         clicksAnalytics: state => state.ABTests.clicksAnalytics,
         clicksSettings: state => state.ABTests.clicksSettings,
+        timeDashboard: state => state.ABTests.timeDashboard,
+        timeRanking: state => state.ABTests.timeRanking,
+        timeShop: state => state.ABTests.timeShop,
+        timeAnalytics: state => state.ABTests.timeAnalytics,
+        timeSettings: state => state.ABTests.timeSettings,
       }),
     }
   }
@@ -131,5 +134,8 @@
     margin: auto;
     text-align: center;
     border-radius: 20px;
+  }
+  .delbutton {
+    margin-left: 0px;
   }
 </style>

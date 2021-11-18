@@ -90,7 +90,8 @@ import { mapState } from 'vuex'
        return {
           isBubble: false,
           timeScale: "hour",
-          standbyDevices: false
+          standbyDevices: false,
+         startTime: 0,
         }
     },
   methods: {
@@ -110,9 +111,13 @@ import { mapState } from 'vuex'
   },
   created() {
     window.addEventListener('click', this.clickHandler);
+    const current = new Date();
+    this.startTime = current.getTime();
   },
   beforeDestroy() {
     window.removeEventListener('click', this.clickHandler);
+    const current2 = new Date();
+    this.$store.commit("incrementTimeAnalytics", current2.getTime()-this.startTime);
   },
 };
 </script>
