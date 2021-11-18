@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <md-toolbar :md-elevation="2">
-        <span v-if="isBubble && !ABToggle" class="md-title">Bubble chart</span>
-        <span v-if="isBubble && ABToggle" class="md-title">List</span>
+        <span v-if="isBubble && ABToggle" class="md-title">Bubble chart</span>
+        <span v-if="isBubble && !ABToggle" class="md-title">List</span>
         <span v-if="!isBubble" class="md-title">Graph</span>
         <span v-if="standbyDevices && isBubble" class="md-title">of standby devices</span>
     </md-toolbar>
@@ -16,7 +16,7 @@
         <md-button v-else v-on:click="timeswitch('month')">Month</md-button>
       </md-card-content>
     </md-card>
-    <md-card v-if="isBubble && !standbyDevices && !ABToggle" class="card">
+    <md-card v-if="isBubble && !standbyDevices && ABToggle" class="card">
       <div @click="standbyswitch">
       <md-card-content v-if="timeScale == 'hour'">
         <img src="./BubbleHour.png">
@@ -29,7 +29,7 @@
       </md-card-content>
       </div>
     </md-card>
-    <md-card v-if="isBubble && !standbyDevices && ABToggle" class="card">
+    <md-card v-if="isBubble && !standbyDevices && !ABToggle" class="card">
       <div @click="standbyswitch">
       <md-card-content>
         <BarChartHour v-if="timeScale == 'hour'"/>
@@ -45,12 +45,12 @@
         <LineChartMonth v-if="timeScale == 'month'"/>
       </md-card-content>
     </md-card>
-    <md-card v-if="standbyDevices && isBubble && !ABToggle" class="card">
+    <md-card v-if="standbyDevices && isBubble && ABToggle" class="card">
         <div @click="standbyswitch">
           <img src="./BubbleStandby.png">
         </div>
     </md-card>
-    <md-card v-if="standbyDevices && isBubble && ABToggle" class="card">
+    <md-card v-if="standbyDevices && isBubble && !ABToggle" class="card">
         <div @click="standbyswitch">
           <BarChartSD/>
         </div>

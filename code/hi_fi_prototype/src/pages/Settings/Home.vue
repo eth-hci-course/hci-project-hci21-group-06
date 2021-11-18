@@ -35,10 +35,10 @@
       <md-button @click="delPressed=true" class="md-accent md-raised delbutton">Delete Account</md-button>
       <md-dialog-confirm
           :md-active.sync="delPressed"
-          md-title="Delete Account?"
+          md-title="Delete Account"
           md-content="Are you sure you want to delete your account? This action cannot be undone!"
-          md-confirm-text="Agree"
-          md-cancel-text="Disagree"
+          md-confirm-text="Confirm"
+          md-cancel-text="Cancel"
           @md-cancel="onCancel"
           @md-confirm="onConfirm" />
     </div>

@@ -1,7 +1,7 @@
 <template>
 <div class="dashboard">
   <md-content class="upper">
-    <div class="upper-coins" ><div>Banked: {{currentCurrency}}
+    <div class="upper-coins" ><div>Banked: 51
       <div class="svg-wrapper" style="display: inline-flex;align-self: center;top: .125em;position: relative;">
       <svg width="1em" height="1em" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="25" cy="25" r="23.5" :stroke="currentColor" stroke-width="3"/>
