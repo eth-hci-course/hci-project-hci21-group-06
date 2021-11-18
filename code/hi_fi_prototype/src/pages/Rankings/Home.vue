@@ -47,7 +47,7 @@
           <md-list-item v-else>
             <div class="md-list-item-text md-title" v-if="item.name=='You'" :style="'color: '+currentColor">
               {{ item.place }}
-              {{"&nbsp;".repeat(10-item.place.toString().length)}}
+              {{"&nbsp;".repeat(15-2*item.place.toString().length)}}
               {{ item.name}}
             </div>
             <div class="md-list-item-text" v-else>
@@ -80,6 +80,7 @@
     name: 'ranking',
     data: () => ({
       ab: true,
+      clicks: 0,
       selectedGroup: {name: "family", display: "Family"},
       groupID: 0,
       groups: [
@@ -97,11 +98,6 @@
         {name: "year", display: "Yearly"},
       ],
       ranking: [
-        {place: 1, name: "Beat Astli", score: 50000},
-        {place: 2, name: "Mike Peters", score: 48255},
-        {place: 3, name: "Lia DaFranco", score: 48116},
-        {place: 4, name: "Vivianne Lang", score: 32985},
-        {place: 5, name: "Jacob Neill", score: 31267},
       ],
 
     }),
@@ -109,6 +105,9 @@
       keyDownHandler(e) {
         console.log(e.key)
         this.ab = !this.ab;
+      },
+      clickHandler() {
+        this.clicks++;
       },
       updateDrop() {
         console.log("ran update");
@@ -139,7 +138,9 @@
       }
     },
     created() {
-      window.addEventListener('keydown', this.keyDownHandler)
+      window.addEventListener('keyown', this.keyDownHandler),
+      window.addEventListener('click', this.clickHandler),
+          this.ranking = rankings[this.groupID][this.timeID];
     },
     computed: mapState({
       ABToggle: state => state.ABTests.ABToggle,
