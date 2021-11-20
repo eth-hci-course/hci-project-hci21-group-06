@@ -82,14 +82,14 @@ export default {
       startTime: 0,
       challenges: [
         {title: "Chill out", content: "reduce the energy usage of your fridge over the next 7 days by 30%", reward: 120, show: false, accepted: false},
-        {title: "Clean dishes", content: "Over the next 30 days, use your dishwasher only once per day", reward: 120, show: false, accepted: false},
-        {title: "Good cooking", content: "Never use more than two stove plates at once for a week", reward: 120, show: false, accepted: false},
-        {title: "Not always on", content: "Turn off your Laptop and PC during the night for a whole month", reward: 120, show: false, accepted: false},
-        {title: "Two wheels", content: "Dont use your electric car and exclusively use micromobility for 2 weeks", reward: 120, show: false, accepted: false},
-        {title: "Not addicted", content: "Unlock your phone a maximum of 50 times per day for 20 days in a row", reward: 120, show: false, accepted: false},
-        {title: "Green food", content: "This challenge involved multiple requirements. Over the period of 30 days, never use your oven, only use your stove every other day and dont use any other electric kitchen appliances.", reward: 120, show: false, accepted: false},
-        {title: "Reality > TV", content: "Stop using your TV for a whole month", reward: 120, show: false, accepted: false},
-        {title: "Sunny", content: "Expand the solar panels on your roof by at least 1'000CHF", reward: 120, show: false, accepted: false},
+        {title: "Clean dishes", content: "Over the next 30 days, use your dishwasher only once per day", reward: 80, show: false, accepted: false},
+        {title: "Less stove", content: "Never use more than two stove plates at once for a week", reward: 70, show: false, accepted: false},
+        {title: "Not always on", content: "Turn off your Laptop and PC during the night for a whole month", reward: 90, show: false, accepted: false},
+        {title: "Two wheels", content: "Dont use your electric car and exclusively use micromobility for 2 weeks", reward: 150, show: false, accepted: false},
+        {title: "Not addicted", content: "Unlock your phone a maximum of 50 times per day for 20 days in a row", reward: 50, show: false, accepted: false},
+        {title: "Green food", content: "This challenge involved multiple requirements. Over the period of 30 days, never use your oven, only use your stove every other day and dont use any other electric kitchen appliances.", reward: 340, show: false, accepted: false},
+        {title: "Reality > TV", content: "Stop using your TV for a whole month", reward: 220, show: false, accepted: false},
+        {title: "Sunny panels", content: "Expand the solar panels on your roof by at least 1'000CHF", reward: 210, show: false, accepted: false},
       ]
     }
   },
