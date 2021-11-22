@@ -188,7 +188,7 @@ We will also do a survey afterwards to get the users opinion on how well they li
 #### Task (A/B)
 1. locate the challenges section on the dashboard, locate and accept the **(dishwasher/stove) challenge**, fill the reward into the sheet, locate and accept the **(solarpanel/TV) challenge**, also fill in the reward on the sheet
 2. move on to the rankings, find your place on the **(monthly worldwide / yearly country) ranking** and fill it into the sheet, then find your place on the **(yearly freinds / weekly worldwide) ranking** and also fill it into the sheet
-3. move on to the usage, find the electricity usage of your **Fridge** over the last 24h, then find the electricity usage of your **PC** over the last 7 days, fill both into the sheet
+3. move on to the usage, find the electricity usage of your **(Fridge/Lighting)** over the last 24h, then find the electricity usage of your **(Chargers/TV-Box)** over the last Month, fill both into the sheet
 4. move on to the shop, find and equit **Theme X**, then buy and equip **Theme Y**
 
 #### Apparatus
