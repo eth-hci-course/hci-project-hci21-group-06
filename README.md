@@ -191,6 +191,8 @@ We will also do a survey afterwards to get the users opinion on how well they li
 3. A Move on to the usage, find the electricity usage of your **Fridge** (A) over the last 24h and fill it into the sheet. 
 4. A Move on to the shop, find, buy and equip **Purple Dark** (A).
 
+#### Task B
+
 1. B Locate the challenges section on the dashboard, locate and accept the **phone challenge** (B), fill in the reward on the sheet.
 2. B Move on to the rankings, find your place on the **annual country ranking** (B) and fill it into the sheet.
 3. B Move on to the usage, find the electricity usage of your **AC and Heating** (B) over the last month and fill it into the sheet.
