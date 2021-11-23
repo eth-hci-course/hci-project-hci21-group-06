@@ -155,7 +155,7 @@ Ideas for the A/B test
 ## User study
 ### Goal of the User Study
 In our user study we want to compare two different versions of our app that have numerous changes. The rough structure of the app remains the same for both versions, but we will vary the content on many of the screens quite a bit. This investigation is inspired by our mid-fi prototypes as we used some fancy designs (eg. bubbles to represent usage) but we are not sure if those designs are actually efficient to use.
-Our A/B variants will help us decide on which way of structuring the content of the app acutally performs better. To do this, our A variant encompasses somewhat chaotic but fancy designs, using cards and bubbles, whereas our B variant is more structured, using lists and dropdowns. 
+Our A/B variants will help us decide on which way of structuring the content of the app actually performs better. To do this, our A variant encompasses somewhat chaotic but fancy designs, using cards and bubbles, whereas our B variant is more structured, using lists and dropdowns. 
 
 ### Differences between A and B
 Screen | A (the 'fancy' prototype) | B (the 'structured' prototype)
