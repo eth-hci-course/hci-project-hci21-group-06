@@ -186,15 +186,15 @@ We will also do a survey afterwards to get the users opinion on how well they li
 
 ### Experiment procedure
 #### Task A
-1.A Locate the challenges section on the dashboard, locate and accept the **dishwasher challenge** (A), fill the reward into the sheet.
-2.A Move on to the rankings, find your place on the **monthly family ranking** (A) and fill it into the sheet.
-3.A Move on to the usage, find the electricity usage of your **Fridge** (A) over the last 24h and fill it into the sheet. 
-4.A Move on to the shop, find, buy and equip **Purple Dark** (A).
+1. A Locate the challenges section on the dashboard, locate and accept the **dishwasher challenge** (A), fill the reward into the sheet.
+2. A Move on to the rankings, find your place on the **monthly family ranking** (A) and fill it into the sheet.
+3. A Move on to the usage, find the electricity usage of your **Fridge** (A) over the last 24h and fill it into the sheet. 
+4. A Move on to the shop, find, buy and equip **Purple Dark** (A).
 
-1.B Locate the challenges section on the dashboard, locate and accept the **phone challenge** (B), fill in the reward on the sheet.
-2.B Move on to the rankings, find your place on the **annual country ranking** (B) and fill it into the sheet.
-3.B Move on to the usage, find the electricity usage of your **AC and Heating** (B) over the last month and fill it into the sheet.
-4.B Move on to the shop, find, buy and equip **Purple Light** (B)
+1. B Locate the challenges section on the dashboard, locate and accept the **phone challenge** (B), fill in the reward on the sheet.
+2. B Move on to the rankings, find your place on the **annual country ranking** (B) and fill it into the sheet.
+3. B Move on to the usage, find the electricity usage of your **AC and Heating** (B) over the last month and fill it into the sheet.
+4. B Move on to the shop, find, buy and equip **Purple Light** (B)
 
 #### Apparatus
 We use the app running on a phone. The easiest way to do this is having the server running on a laptop and opening the local network page in any phone browser while on the same network. After scrolling a bit to make the adressbar disappear, this should work and interact exactly the same as any native app for our purposes. The user is seated all the time at a table. The phone can be any phone of the tester with a sufficiently large screen (6in+).
