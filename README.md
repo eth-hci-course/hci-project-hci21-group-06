@@ -203,3 +203,5 @@ We use the app running on a phone. The easiest way to do this is having the serv
 [Questionnaire #2](https://forms.gle/UX1a4CnVWnKAGzCb6)
 
 [Questionnaire #3](https://forms.gle/Jy2eHnu6oRBG4VqM6)
+
+[Results](https://docs.google.com/spreadsheets/d/1jbulOO1UTtA-sAGC7DEpLk7GF9I7dgUGPwEZ0pk7zmM/edit?usp=sharing)
