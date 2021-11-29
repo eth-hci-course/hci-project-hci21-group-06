@@ -1,0 +1,32 @@
+20:
+Analytics hardest
+Historic data at sand watch would be useful
+Click on sandwich eg to show wow i used a lot less energy last month
+Ranking dropdown easy, but arrows even easier
+Only looked for item in shop, very easy to find, just scrolled
+Didnt find bubbles button, then didnt realize you could click on category
+
+21:
+Analytics hardest (!)
+Bubble chart was not easy to navigate
+Dropdown-menu better than “Slide-menu”
+Icons help navigating 
+Weird colours 
+Colorful cards in A ugly
+
+22: 
+B is a lot better
+Compact challenges, überblick
+Progress bar for challenges confusing, thought task wasnt completed
+Dropdown better than arrows, low contrast on arrows, dont know what options are there
+Good contrast on you
+Color theme customization too much, one theme is better, dont let users use bad color themes
+Bar diagram a lot better than bubbles, charts fancy
+Clicking not intuitive
+
+
+23:
+Cant directly accept challenges in B
+Not much difference between dropdowns an arrows
+Shop buy button colors are odd
+Want to know absolute value of something in diagram, not just look how long bar is
