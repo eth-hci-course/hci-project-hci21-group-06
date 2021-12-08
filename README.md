@@ -212,4 +212,4 @@ The data from our userstudy sadly doesnt allow a definitive answer as to which i
 The verbal feedback proved to be more useful to us since users were able to directly communicate what they thought about certain things. Users liked the single click challenge acception in A, but disliked the colors. In the ranking, the general consensus was that the dropdowns are better, which is in line with the fact that dropdowns used (statistically significantly) less clicks.
 Other than that we also found out that the Analytics page is currently the most challenging one, resulting in the highest amount of clicks, completion time and user confusion, helping us to know where we could further improve on our prototype.
 
-[Full study report TODO ADD LINK]()
+[Full study report](https://github.com/eth-ait/hci-project-hci21-group-06/blob/53c6c65232f5065207868b1c0f2f459ed475bc35/Deliverables/Study/HCI_Group_06_User_Study_Report.pdf)
