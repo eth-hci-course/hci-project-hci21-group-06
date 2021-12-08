@@ -204,4 +204,12 @@ We use the app running on a phone. The easiest way to do this is having the serv
 
 [Questionnaire #3](https://forms.gle/Jy2eHnu6oRBG4VqM6)
 
-[Results](https://docs.google.com/spreadsheets/d/1jbulOO1UTtA-sAGC7DEpLk7GF9I7dgUGPwEZ0pk7zmM/edit?usp=sharing)
+[Results of Questionnaires](https://docs.google.com/spreadsheets/d/1jbulOO1UTtA-sAGC7DEpLk7GF9I7dgUGPwEZ0pk7zmM/edit?usp=sharing)
+
+## Results
+The data from our userstudy sadly doesnt allow a definitive answer as to which interface is better overall. Neither the total amount of clicks, nor total amount of time or SUS scores had a statistically significant difference between the versions, meaning we failed to reject any of the null hypotheses. The only statistically significant difference were the amount of clicks on the dashboard (B needed more) and the ranking (A needed more), although these are both a direct result of the way those different versions are structured. Both of these findings turn up also in the verbal feedback.
+
+The verbal feedback proved to be more useful to us since users were able to directly communicate what they thought about certain things. Users liked the single click challenge acception in A, but disliked the colors. In the ranking, the general consensus was that the dropdowns are better, which is in line with the fact that dropdowns used (statistically significantly) less clicks.
+Other than that we also found out that the Analytics page is currently the most challenging one, resulting in the highest amount of clicks, completion time and user confusion, helping us in further refining our prototype.
+
+[Full study report TODO ADD LINK]()
