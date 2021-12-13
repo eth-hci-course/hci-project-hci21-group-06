@@ -1,23 +1,25 @@
 <template>
   <div class="home">
     <md-toolbar :md-elevation="2">
-        <span v-if="isBubble && ABToggle" class="md-title">Bubble chart</span>
-        <span v-if="isBubble && !ABToggle" class="md-title">List</span>
-        <span v-if="!isBubble" class="md-title">Graph</span>
-        <span v-if="standbyDevices && isBubble" class="md-title">of standby devices</span>
+        <span v-if="isBubble" class="md-title">By device electricity use</span>
+        <span v-if="!isBubble" class="md-title">Total electricity use</span>
     </md-toolbar>
-    <md-card v-if="!standbyDevices || !isBubble" class="card selectTime">
+    <md-card class="card selectTime">
       <md-card-content>
-        <md-button v-if="timeScale == 'hour'" class="md-raised md-accent">Hour</md-button>
-        <md-button v-else v-on:click="timeswitch('hour')">Hour</md-button>
-        <md-button v-if="timeScale == 'day'" class="md-raised md-accent">Day</md-button>
-        <md-button v-else v-on:click="timeswitch('day')">Day</md-button>
-        <md-button v-if="timeScale == 'month'" class="md-raised md-accent">Month</md-button>
-        <md-button v-else v-on:click="timeswitch('month')">Month</md-button>
+        <div v-if="!standbyDevices || !isBubble">
+          <md-button v-if="timeScale == 'hour'" class="md-raised md-accent">Hour</md-button>
+          <md-button v-else v-on:click="timeswitch('hour')">Hour</md-button>
+          <md-button v-if="timeScale == 'day'" class="md-raised md-accent">Day</md-button>
+          <md-button v-else v-on:click="timeswitch('day')">Day</md-button>
+          <md-button v-if="timeScale == 'month'" class="md-raised md-accent">Month</md-button>
+          <md-button v-else v-on:click="timeswitch('month')">Month</md-button>
+        </div>
+        <md-button v-if="isBubble && !standbyDevices" class="sdbutton md-raised" v-on:click="standbyswitch()">Switch to standby devices</md-button>
+        <md-button v-if="isBubble && standbyDevices" class="sdbutton md-raised" v-on:click="standbyswitch()">Switch to all devices</md-button>
       </md-card-content>
     </md-card>
     <md-card v-if="isBubble && !standbyDevices && ABToggle" class="card">
-      <div @click="standbyswitch">
+      <div>
       <md-card-content v-if="timeScale == 'hour'">
         <img src="./BubbleHour.png">
       </md-card-content>
@@ -30,7 +32,7 @@
       </div>
     </md-card>
     <md-card v-if="isBubble && !standbyDevices && !ABToggle" class="card">
-      <div @click="standbyswitch">
+      <div>
       <md-card-content>
         <BarChartHour v-if="timeScale == 'hour'"/>
         <BarChartDay v-if="timeScale == 'day'"/>
@@ -46,19 +48,17 @@
       </md-card-content>
     </md-card>
     <md-card v-if="standbyDevices && isBubble && ABToggle" class="card">
-        <div @click="standbyswitch">
+        <div>
           <img src="./BubbleStandby.png">
         </div>
     </md-card>
     <md-card v-if="standbyDevices && isBubble && !ABToggle" class="card">
-        <div @click="standbyswitch">
+        <div>
           <BarChartSD/>
         </div>
     </md-card>
-    <md-button v-on:click="gswitch()" class="md-fab">
-      <md-icon v-if="isBubble">show_chart</md-icon>
-      <md-icon v-else>bubble_chart</md-icon>
-    </md-button>
+    <md-button class="md-raised md-accent dbut" v-if="isBubble" v-on:click="gswitch()"> Switch to total electricity use </md-button>
+    <md-button class="md-raised md-accent dbut" v-else v-on:click="gswitch()"> Switch to by device electricity use </md-button>
   </div>
 </template>
 
@@ -132,14 +132,24 @@ import { mapState } from 'vuex'
   font-weight: bold;
 }
 
-.md-fab{
+.dbut{
   position: fixed;
   bottom: 70px;
-  left: 80%;
+  width: 95.5%;
+}
+
+.sdbutton{
+  width: 95%;
 }
 
 .card{
   width: 95%;
   margin-top: 10px;
 }
+
+.selectTime{
+  display: flex;
+  justify-content: center;
+}
+
 </style>
