@@ -1,7 +1,7 @@
 <template>
   <div style="text-align: center">
     <div class="upper">
-      <div class="dropdownwrapper" v-if="!ABToggle">
+      <div class="dropdownwrapper" v-if="ABToggle">
         <md-field class="dropdown">
           <label for="timeID">Time</label>
           <md-select v-model="timeID" name="timeID" id="timeID">

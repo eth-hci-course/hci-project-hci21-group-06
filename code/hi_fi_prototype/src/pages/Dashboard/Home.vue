@@ -13,7 +13,7 @@
     <div class="upper-kwh">Used: {{kwh}} KWH</div>
   </md-content>
   <md-content class="card-wrapper md-elevation-4" v-if="ABToggle">
-    <md-card class="card md-elevation-4 md-primary" v-for="item in challenges" :key="item.title">
+    <md-card class="card md-elevation-4" v-for="item in challenges" :key="item.title">
       <md-card-header>
         <md-card-header-text>
           <div class="md-title">{{ item.title }}</div>
