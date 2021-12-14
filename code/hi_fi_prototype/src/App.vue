@@ -27,7 +27,7 @@ export default {
     return {transitionName: 'slide-right'}
   }, 
   computed: mapState({
-        shopRoute: state => (state.ABTests.ABToggle) ? '/shopB' : '/shopA',
+        shopRoute: state => '/shopA',
     }),
   watch: {
     '$route' (to, from) {

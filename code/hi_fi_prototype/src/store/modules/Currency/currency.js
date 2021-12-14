@@ -1,6 +1,6 @@
 
 const state = () => ({
-    currentCurrency: 10,
+    currentCurrency: 50,
     lifetimeCurrency: 500,
 })
 

@@ -48,7 +48,7 @@ export default {
     this.$store.commit("incrementTimeShop", current2.getTime()-this.startTime);
   },
   computed: mapState({
-        ABToggle: state => state.ABTests.ABToggle,
+        ABToggle: state => false,
     }),
   watch: {
   '$route' (to, from) {
