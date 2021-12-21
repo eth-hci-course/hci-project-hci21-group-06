@@ -214,4 +214,4 @@ Other than that we also found out that the Analytics page is currently the most 
 
 [Full study report](https://github.com/eth-ait/hci-project-hci21-group-06/blob/53c6c65232f5065207868b1c0f2f459ed475bc35/Deliverables/Study/HCI_Group_06_User_Study_Report.pdf)
 
-[Final Prototype Video] (https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/finalprototype.mp4)
+[Final Prototype Video](https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/finalprototype.mp4)
