@@ -213,3 +213,5 @@ The verbal feedback proved to be more useful to us since users were able to dire
 Other than that we also found out that the Analytics page is currently the most challenging one, resulting in the highest amount of clicks, completion time and user confusion, helping us to know where we could further improve on our prototype.
 
 [Full study report](https://github.com/eth-ait/hci-project-hci21-group-06/blob/53c6c65232f5065207868b1c0f2f459ed475bc35/Deliverables/Study/HCI_Group_06_User_Study_Report.pdf)
+
+[Final Prototype Video] (https://github.com/eth-ait/hci-project-hci21-group-06/blob/2021/Deliverables/finalprototype.mp4)
